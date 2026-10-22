@@ -28,7 +28,7 @@ else:
 run("docker exec native-platform pgrep -a rtrouted")
 run("docker exec native-platform pgrep -a rfc_provider")
 run("docker exec native-platform rbuscli getvalues Device.X_RDK_WebConfig.webcfgSubdocForceReset")
-# Execute verbatim runbook CA refresh, HTTPS probe and original-artifact backup.
+# Execute verbatim runbook CA refresh, HTTPS probe and original-artifact backup commands.
 start = setup.index("docker exec mockxconf sh -c 'cp /etc/pki/")
 end = setup.index("# Install only with T2 stopped", start)
 run(setup[start:end])
@@ -72,3 +72,4 @@ run("docker exec native-platform rbuscli getvalues Device.X_RDK_WebConfig.webcfg
 run("docker exec native-platform sh -c 'pgrep -a telemetry2_0; sha256sum /opt/certs/client.pem /opt/certs/client.p12'")
 run("docker inspect --format '{{json .NetworkSettings.Networks}} {{.State.StartedAt}}' mockxconf")
 print("STEP16_DONE", now(), "INITIAL_PID", pid, flush=True)
+
