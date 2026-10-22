@@ -142,7 +142,7 @@ docker exec mockxconf openssl x509 -in /etc/xconf/certs/mock-xconf-server-cert.p
 
 - Fresh startup requires `ENABLE_CRL_L3=false` on **both** services. Disabling
   only the collector leaves native startup waiting for an unexported CRL
-  certificate and eventually aborting. The bundle override covers both;
+  certificate and eventually aborting. The repo override covers both;
   `ENABLE_MTLS=true` remains inherited from upstream Compose.
   [CRL-L3 startup mismatch evidence.](EVIDENCE.md#step-4-collector-only-crl-l3-override)
 - The fresh upstream image at container repository revision
@@ -187,6 +187,6 @@ docker exec mockxconf openssl x509 -in /etc/xconf/certs/mock-xconf-server-cert.p
 
 | Topic | Summary |
 | --- | --- |
-| Fresh workspace | Use the supplied bundle inputs and generate fresh certificates during container startup. |
+| Fresh workspace | Clone this repo; certificates are generated fresh at container startup. |
 | Pre-demo certificates | Certs are valid for 1 day from container start. Recreate containers within ~20 hours before a demo; both `-checkend 7200` checks must pass. |
 | TLS verification | Retain mTLS and never bypass TLS verification. |
