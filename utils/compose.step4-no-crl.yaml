@@ -1,0 +1,7 @@
+services:
+  mock-xconf:
+    environment:
+      ENABLE_CRL_L3: "false"
+  l2-container:
+    environment:
+      ENABLE_CRL_L3: "false"

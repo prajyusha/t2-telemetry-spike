@@ -1,0 +1,49 @@
+16272 exit_group(0)                     = ?
+16272 +++ exited with 0 +++
+16289 exit_group(0)                     = ?
+16289 +++ exited with 0 +++
+16288 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16289, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16288 exit_group(0)                     = ?
+16288 +++ exited with 0 +++
+16280 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16288, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16291 exit_group(0)                     = ?
+16291 +++ exited with 0 +++
+16290 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16291, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16290 exit_group(0)                     = ?
+16290 +++ exited with 0 +++
+16280 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16290, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16295 exit_group(0)                     = ?
+16295 +++ exited with 0 +++
+16294 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16295, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16294 exit_group(0)                     = ?
+16294 +++ exited with 0 +++
+16280 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16294, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16300 exit_group(0)                     = ?
+16300 +++ exited with 0 +++
+16299 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16300, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16299 exit_group(0)                     = ?
+16299 +++ exited with 0 +++
+16279 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16299, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16305 exit_group(0)                     = ?
+16305 +++ exited with 0 +++
+16304 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16305, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16304 exit_group(0)                     = ?
+16304 +++ exited with 0 +++
+16280 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16304, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+16303 +++ exited with 0 +++
+16330 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x17d7d7e7d7d7d7d9} ---
+16330 tgkill(16279, 16330, SIGABRT)     = 0
+16330 --- SIGABRT {si_signo=SIGABRT, si_code=SI_TKILL, si_pid=16279, si_uid=0} ---
+16308 +++ killed by SIGABRT +++
+16302 +++ killed by SIGABRT +++
+16293 +++ killed by SIGABRT +++
+16330 +++ killed by SIGABRT +++
+16309 +++ killed by SIGABRT +++
+16296 +++ killed by SIGABRT +++
+16281 +++ killed by SIGABRT +++
+16301 +++ killed by SIGABRT +++
+16298 +++ killed by SIGABRT +++
+16297 +++ killed by SIGABRT +++
+16292 +++ killed by SIGABRT +++
+16280 +++ killed by SIGABRT +++
+16279 +++ killed by SIGABRT +++

@@ -1,0 +1,174 @@
+STEP 9 — SINGLE DIAGNOSTIC RUN, OCTOBER 15, 2026
+
+Scope
+One actual T2 launch; no source patch applied; no credential regeneration;
+no container recreation; no second reproduction.
+Earlier runner file operations did not materialize on disk. A long command
+was rejected by tool validation and another failed shell parsing before
+launch. Neither launched T2. The actual run used direct docker commands.
+
+Preparation
+Original /opt/t2-orig backup: 46 artifacts verified before installation.
+Existing /opt/t2-debug-src Makefile was present.
+Executed: cd /opt/t2-debug-src && make install && ldconfig
+No explicit rebuild was requested; make install performed normal relinking.
+Original backup was not overwritten.
+
+strace 5.16-0ubuntu3 arm64 installed in native-platform.
+Initial apt sandbox attempt failed on setgroups/setegid/seteuid.
+Installation succeeded with APT::Sandbox::User=root.
+No Python third-party packages were installed.
+
+Observed linkage:
+  /usr/local/bin/telemetry2_0
+    libasan.so.6 => /lib/aarch64-linux-gnu/libasan.so.6
+  /usr/local/lib/libreportgen.so
+    libasan.so.6 => /lib/aarch64-linux-gnu/libasan.so.6
+  /usr/local/lib/libbulkdata.so
+    libasan.so.6 => /lib/aarch64-linux-gnu/libasan.so.6
+
+Run
+Launch time: 2026-10-15T11:50:38Z
+Daemon PID: 16279
+Only persisted profile: T2Spike, clean host fixture unchanged.
+DM set/get: string false.
+Fresh SPIKE_MATCH appended to shared utils/t2-spike.log.
+Event sender: t2_event_s returned 0.
+Command:
+  docker exec -d \
+    -e ASAN_OPTIONS=log_path=/opt/asan/t2:abort_on_error=1:detect_leaks=0:symbolize=1 \
+    native-platform strace -f -o /opt/asan/strace.txt \
+    -e trace=exit_group,kill,tgkill /usr/local/bin/telemetry2_0
+
+Actual local log:
+20261015 11:51:08.168 INFO   LOG.RDK.T2- cJSON Report = {"Report":[{"SPIKE_DM":"false"},{"SPIKE_GREP":"1"},{"SPIKE_EVENT":"spike-event-ok"}]}
+20261015 11:51:08.169 INFO   LOG.RDK.T2- Report Size = 85
+20261015 11:51:08.169 DEBUG   LOG.RDK.T2- prepareHttpUrl: Default URL: https://mockxconf:50051/dataLakeMockReportProfile
+
+This local report is not a collector receipt. Collector logs since launch
+through the observation at 11:51:22 UTC contained heartbeats and no
+Data received: line. No collector-receipt JSON was fabricated.
+
+Fault and termination
+ASan report: /opt/asan/t2.16279
+Read SEGV at reportgen.c:1692, prepareHttpUrl.
+Only four fault-stack frames were emitted, not fifteen.
+Thread-creation stacks are separately labeled in the complete report.
+
+strace:
+16330 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x17d7d7e7d7d7d7d9} ---
+16330 tgkill(16279, 16330, SIGABRT)     = 0
+16330 --- SIGABRT {si_signo=SIGABRT, si_code=SI_TKILL, si_pid=16279, si_uid=0} ---
+16279 +++ killed by SIGABRT +++
+
+The daemon died by signal after ASan handled the initial SIGSEGV.
+Parent/helper exit_group(0) lines are not a clean daemon exit.
+
+Fault context from /opt/t2-debug-src/source/reportgen/reportgen.c:
+1677 {
+1678     if(http == NULL)
+1679     {
+1680         T2Error("Http parameters are NULL\n");
+1681         return NULL;
+1682     }
+1683     CURL *curl = curl_easy_init();
+1684     if(curl == NULL)
+1685     {
+1686         T2Error("Curl init failed Response is NULL\n");
+1687         return NULL;
+1688     }
+1689     char *httpUrl = strdup(http->URL);
+1690     T2Debug("%s: Default URL: %s \n", __FUNCTION__, httpUrl);
+1691
+1692     if (http->RequestURIparamList && http->RequestURIparamList->count)
+1693     {
+1694         unsigned int index = 0;
+1695         int params_len = 0;
+1696         char *url_params = NULL;
+1697         char *temp_params = NULL;
+1698         char *temp_url = NULL;
+1699
+1700         for(; index < http->RequestURIparamList->count; index++)
+1701         {
+1702             HTTPReqParam * httpParam = (HTTPReqParam *)(Vector_At)(http->RequestURIparamList, index);
+1703             char *httpParamVal = NULL;
+1704             char *paramValue = NULL;
+1705
+1706             if (httpParam->HttpValue)		//Static parameter
+1707             {
+
+Source-supported diagnosis
+Paths below are relative to telemetry/.
+- source/reportgen/reportgen.h:51-57 defines T2HTTP with URL,
+  Compression, Method, and Vector *RequestURIparamList.
+- source/bulkdata/profile.c, loadReportProfilesFromDisk, calls
+  processConfiguration(&config->configData, config->name, NULL, &profile).
+- source/t2parser/t2parser.c, processConfiguration, line 1861:
+    profile->t2HTTPDest = (T2HTTP *) malloc(sizeof(T2HTTP));
+  The enclosing Profile is zeroed, but this separately allocated T2HTTP
+  object is not.
+- processConfiguration reads optional HTTP.RequestURIParameter at 1708
+  and passes it to protocolSet at 1941.
+- protocolSet, lines 1497-1499, assigns URL, Compression, and Method.
+  The list is initialized only inside:
+    if(jprofileHTTPRequestURIParameter)
+    {
+        Vector_Create(&(profile->t2HTTPDest->RequestURIparamList));
+- Clean T2Spike omits RequestURIParameter. This leaves the list pointer
+  indeterminate. Its non-NULL value passes the first condition at 1692
+  and the count dereference faults.
+- source/bulkdata/profile.c:689, CollectAndReport:
+    httpUrl = prepareHttpUrl(profile->t2HTTPDest);
+
+The invalid member is RequestURIparamList, not a demonstrated NULL URL.
+The exact pointer bits were not independently captured in a debugger;
+ASan reports the accessed address, not a pointer-variable dump.
+The report and source path support uninitialized optional-list state.
+ASan did not classify this as use-after-free or provide allocation history.
+
+Debug-copy t2parser.c and reportgen.c compare byte-for-byte equal to the
+host checkout. Checkout HEAD remains a2f2a545e4bd6170eac96f7c0c46fbd4df6f1654.
+Installed original commit remains unknown.
+
+Proposal
+utils/t2-prepareHttpUrl-fix.diff changes only the JSON parser's T2HTTP
+allocation from malloc to calloc. This initializes the absent optional list
+to NULL and retains the existing allocation-failure handling.
+No extra NULL guard is proposed in prepareHttpUrl: one already exists.
+The separate MessagePack allocation was observed but is outside this
+minimal JSON-path proposal. The proposal is unapplied and untested.
+
+Restoration
+Observed:
+  RESTORED AND HASH/LINK VERIFIED 46 original artifacts
+Restoration verified each preserved backup's SHA-256, copied each artifact
+without following symlinks, checked all installed SHA-256 values and symlink
+targets against /opt/t2-orig/manifest.json, then ran ldconfig.
+An independent final check again verified all 46 backup artifact hashes.
+
+Original daemon SHA-256:
+99c874f617027eba949d0e3c218f8dc8492ff1a3d9cd67e0480289d97c1207ca
+Original reportgen SHA-256:
+45b1e7b184ca3582e71e830ddceb6c293a101a4c90c504207970257f3e2ebecf
+
+Before/after manifest SHA-256:
+a152dc37b4bd2abf51af81f7d126a358bc98966ea2f275971aa5b36f56ff4f1e
+Before/after native client.pem SHA-256:
+6b46d857503251b5e243e760a3b616e2065d99b9bea3ecf77e69345a6b5d8cbd
+Before/after native client.p12 SHA-256:
+27bcba86802cc43c188e47cf5abb34e0faaa3351396ec6bece686f35b115ed62
+
+Raw container evidence SHA-256:
+/opt/asan/t2.16279
+ba17868287ac37e7535a0715a9ba3244c8b68868ea1aafac7b29963500b205f2
+/opt/asan/strace.txt
+da22c9939f59f1dc9eb468f4397f0d43778f5a25b192d3c1b0993465334d660c
+
+Final state
+Both native-platform and mockxconf Up; T2 absent; strace absent.
+Only clean T2Spike persisted; DM string false.
+telemetry git status: only pre-existing untracked .DS_Store.
+Ancillary telemetry2_0_client remains outside the original 46-artifact
+manifest, as documented in Step 8; no broader restoration claim is made.
+strace remains installed; debug build and raw /opt/asan evidence retained.
+No additional T2 launch or source-patch validation was performed.

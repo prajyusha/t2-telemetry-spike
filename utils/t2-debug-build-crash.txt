@@ -1,0 +1,26 @@
+Step 8 single normal debug/ASan run, 2026-10-15 UTC.
+
+Build checkout: a2f2a545e4bd6170eac96f7c0c46fbd4df6f1654
+Flags: -g -O0 -fsanitize=address -fno-omit-frame-pointer
+Debug daemon build ID: d3c91c3f962a85a77ee913994bf80747aa37a802
+Launch: ulimit -c unlimited; ASAN_OPTIONS=detect_leaks=0:abort_on_error=1:log_path=/opt/t2-step8-asan /usr/local/bin/telemetry2_0
+Normal daemon PID: 14654
+Start: 2026-10-15T11:40:34.990848+00:00
+First cycle check: 2026-10-15T11:41:10.392586+00:00
+
+Observed T2 log:
+20261015 11:41:04.159 INFO LOG.RDK.T2- cJSON Report = {"Report":[{"SPIKE_DM":"false"},{"SPIKE_GREP":"2"},{"SPIKE_EVENT":"spike-event-ok"}]}
+20261015 11:41:04.160 INFO LOG.RDK.T2- Report Size = 85
+20261015 11:41:04.160 DEBUG LOG.RDK.T2- prepareHttpUrl: Default URL: https://mockxconf:50051/dataLakeMockReportProfile
+
+PID absent at first cycle check; zero collector Data received lines.
+No /opt/t2-step8-asan.* report found. No daemon core dump found in the bounded filesystem inspection; core_pattern was "core" and daemon source changes its working directory to "/".
+Exit signal and file:line are UNKNOWN. This is an exit-evidence record, NOT an ASan report or crash backtrace. The Step 7 backtrace must not be attributed to this run.
+
+No second launch or debugger reproduction was performed.
+Original daemon and telemetry libraries restored from /opt/t2-orig/:
+RESTORED and hash-verified 46 original artifacts
+Original daemon SHA-256: 99c874f617027eba949d0e3c218f8dc8492ff1a3d9cd67e0480289d97c1207ca
+Original reportgen SHA-256: 45b1e7b184ca3582e71e830ddceb6c293a101a4c90c504207970257f3e2ebecf
+T2 left stopped; cycles 2-5 not run after disappearance.
+Native PEM/P12 hashes unchanged; DM string false.

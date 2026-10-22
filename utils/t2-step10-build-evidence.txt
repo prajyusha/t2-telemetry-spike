@@ -1,0 +1,27 @@
+a2f2a545e4bd6170eac96f7c0c46fbd4df6f1654
+be7a3bbc68e7334ffcc6ecbf621b11d91ea9fffb
+878ff91 RDKB-65730: Integrate Dynamic Table Support - MsgPack support and L2 tests (#404)
+e4b0948 RDKB-65730: Integrate Dynamic Table Support - Build Time Disabled (#396)
+39a4d65 Fix memory safety issues blocking PR-161 L1 tests (#363)
+a53e6c8 TELEMETRY-2: Dynamic telemetry markers for Dynamic Tables in Telemetry (#161)
+0e0bb32 RDKEMW-15199:[SECVULN] Command injection via /opt/.telemetry/dca_temp… (#355)
+d8f522e RDKEMW-6333: Crash fix for accumulated timestamp (#207)
+e645064 RDK-59221: Enable Accumulate Support For Grep Markers in Telemetry Profiles (#190)
+fc5ce5e Fix coverity resource leak issues
+LINKAGE /usr/local/bin/telemetry2_0
+	libasan.so.6 => /lib/aarch64-linux-gnu/libasan.so.6 (0x0000ffff83600000)
+LINKAGE /usr/local/lib/libreportgen.so
+	libasan.so.6 => /lib/aarch64-linux-gnu/libasan.so.6 (0x0000ffff91c00000)
+LINKAGE /usr/local/lib/libbulkdata.so
+	libasan.so.6 => /lib/aarch64-linux-gnu/libasan.so.6 (0x0000ffff91c00000)
+STEP10_INSTALLED mode=asan
+  [24] .debug_aranges    PROGBITS         0000000000000000  00012e5d
+  [25] .debug_info       PROGBITS         0000000000000000  00012e8d
+  [26] .debug_abbrev     PROGBITS         0000000000000000  000153aa
+  [27] .debug_line       PROGBITS         0000000000000000  000156ce
+  [28] .debug_str        PROGBITS         0000000000000000  00016ca7
+  [29] .debug_line_str   PROGBITS         0000000000000000  00018056
+a152dc37b4bd2abf51af81f7d126a358bc98966ea2f275971aa5b36f56ff4f1e  /opt/t2-orig/manifest.json
+6b46d857503251b5e243e760a3b616e2065d99b9bea3ecf77e69345a6b5d8cbd  /opt/certs/client.pem
+27bcba86802cc43c188e47cf5abb34e0faaa3351396ec6bece686f35b115ed62  /opt/certs/client.p12
+27415 /usr/local/bin/telemetry2_0

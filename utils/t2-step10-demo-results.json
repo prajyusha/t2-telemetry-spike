@@ -1,0 +1,65 @@
+{
+  "scenario": "demo",
+  "started": "2026-10-15T16:11:37.858288+00:00",
+  "pid": "39303",
+  "profile": {
+    "Name": "T2Spike",
+    "Description": "Docker three-marker spike",
+    "Version": "1",
+    "Protocol": "HTTP",
+    "EncodingType": "JSON",
+    "ReportingInterval": 30,
+    "TimeReference": "0001-01-01T00:00:00Z",
+    "RootName": "Report",
+    "Parameter": [
+      {
+        "type": "grep",
+        "marker": "SPIKE_GREP",
+        "search": "SPIKE_MATCH",
+        "logFile": "/mnt/L2_CONTAINER_SHARED_VOLUME/utils/t2-spike.log",
+        "use": "count",
+        "reportEmpty": true
+      },
+      {
+        "type": "event",
+        "name": "SPIKE_EVENT",
+        "eventName": "SPIKE_EVENT",
+        "component": "t2_spike",
+        "use": "absolute",
+        "reportEmpty": true
+      },
+      {
+        "type": "dataModel",
+        "name": "SPIKE_DM",
+        "reference": "Device.X_RDK_WebConfig.webcfgSubdocForceReset",
+        "reportEmpty": true
+      }
+    ],
+    "HTTP": {
+      "URL": "https://mockxconf:50051/dataLakeMockReportProfile",
+      "Compression": "None",
+      "Method": "POST"
+    },
+    "JSONEncoding": {
+      "ReportFormat": "NameValuePair",
+      "ReportTimestamp": "None"
+    },
+    "Hash": "t2-step10-demo-v1"
+  },
+  "traced": false,
+  "cycles": [
+    {
+      "cycle": 1,
+      "checked_at": "2026-10-15T16:12:08.478919+00:00",
+      "pid": "",
+      "receipt": null,
+      "status": "PID changed/disappeared"
+    }
+  ],
+  "passed": false,
+  "error": "T2 PID changed/disappeared: 39303 -> ",
+  "credentials_and_manifest_unchanged": true,
+  "backup_files_unchanged": true,
+  "asan_reports": "",
+  "final_pid": ""
+}

@@ -1,0 +1,118 @@
+Step 6 clean Compose validation — October 15, 2026
+
+PRE-RESTART PERSISTED STATE
+T2 was absent.
+Profile store: /opt/.t2reportprofiles/T2Spike, 839 bytes.
+Profile name: T2Spike
+Declared profile hash: t2-spike-v3
+SHA-256: ad8bd13ff592ad731c0c43b592e281b9d5d73eb9b6562ae7795528aeec4ba08c
+No profiles.msgpack was found under /opt.
+Cache: /opt/.t2cachedmessages, empty.
+Native client.pem SHA-256: 923acd4d8908409d3cf0a74d02dd52e571544ce175eb5df62256bceeef867e6b
+Native client.p12 SHA-256: 3d33c5f4353d0086ebf921e3b861fe5e6879c17963e537bf8f7a13e382256086
+
+RESTART
+Executed Compose down/up with:
+-f docker-device-mgt-service-test/compose.yaml
+-f utils/compose.step4-no-crl.yaml
+up requested only mock-xconf and l2-container, with --pull never.
+Down also removed a pre-existing nmap-platform container.
+Used existing images; did not rebuild.
+The native profile/cache/credential paths are container-local, not persistent mounts.
+New native entrypoint generated initial credentials, as SETUP.md specifies.
+No additional manual native credential generation was performed.
+Post-start client.pem SHA-256: 6b46d857503251b5e243e760a3b616e2065d99b9bea3ecf77e69345a6b5d8cbd
+Post-start client.p12 SHA-256: 27bcba86802cc43c188e47cf5abb34e0faaa3351396ec6bece686f35b115ed62
+Re-exported current public server CAs; trust-only refresh succeeded and skipped client operations.
+Authenticated HTTPS probe succeeded.
+No XConf loading/configuration commands were run.
+
+NORMAL T2 RUN
+Manual startup: docker exec -d native-platform /usr/local/bin/telemetry2_0
+PID: 4053
+Loaded utils/t2-spike-profile.json with rbuscli ReportProfiles string setter.
+Appended SPIKE_MATCH step6-clean-restart to utils/t2-spike.log.
+Set WebConfig reset string to true; getter confirmed true.
+Compiled utils/t2-spike-event.c against /usr/local/lib/libtelemetry_msgsender.
+Event sender returned 0.
+
+20261015 11:12:52.153 INFO LOG.RDK.T2- cJSON Report = {"Report":[{"SPIKE_DM":"true"},{"SPIKE_GREP":"3"},{"SPIKE_EVENT":"spike-event-ok"}]}
+20261015 11:12:52.153 INFO LOG.RDK.T2- POST url = https://mockxconf:50051/dataLakeMockReportProfile
+20261015 11:12:52.153 INFO LOG.RDK.T2- Acquired handle = 0 (pool size: 1)
+20261015 11:12:52.153 INFO LOG.RDK.T2- mTLS defaulted for telemetry
+
+PID 4053 disappeared during the first upload. Exit signal/status was not captured.
+No matching collector receipt or HTTP 200 was observed for this report.
+This local report is NOT collector receipt evidence.
+No received-all-markers.json was written.
+Normal-run PID stability over three cycles was not established.
+
+GDB LIMITATION
+Initial GDB run followed the normally exiting launcher, leaving child 4191 detached.
+Attachment to 4191 failed because it had already disappeared.
+Simple follow-fork-mode child also followed helper vforks away from the daemon.
+The corrected run followed initial daemonization, then switched back to parent mode:
+docker exec native-platform gdb -q -batch -ex 'set pagination off' -ex 'set follow-fork-mode child' -ex 'catch vfork' -ex run -ex 'set follow-fork-mode parent' -ex 'delete breakpoints' -ex continue -ex 'thread apply all bt full' --args /usr/local/bin/telemetry2_0
+
+Daemon PID 4348 did NOT reproduce the upload failure under GDB.
+It delivered DM-only reports at 11:16:51, 11:17:21, 11:17:51, 11:18:21, and 11:18:51 UTC.
+Example collector receipt:
+2026-10-15T11:18:51.208371887Z Data received: {"Report":[{"SPIKE_DM":"true"}]}
+These are not three-marker receipts.
+SIGINT was sent to end the bounded observation; afterward 4348 was absent and no fault backtrace was returned.
+
+LIVE STACK SNAPSHOT — NOT A CRASH BACKTRACE
+A final bounded debugger run followed daemon PID 4485.
+After eight seconds, pkill -STOP -x telemetry2_0 deliberately suspended it.
+GDB generated thread apply all bt output; tool output omitted part of the middle.
+Selected verbatim frames from the available output follow.
+
+Thread 2.1 "telemetry2_0" received signal SIGSTOP, Stopped (signal).
+0x000fff7dd4aac in __GI___clock_nanosleep (clock_id=<optimized out>, clock_id@entry=0, flags=flags@entry=0, req=req@entry=0xfffa88, rem=rem@entry=0xfffa88) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+
+Thread 2.13 (Thread 0xfffe600ee40 (LWP 4507) "telemetry2_0"):
+#5  0x000fff7ed3100 in getUpdatedConfigurationThread () from /usr/local/lib/libxconfclient.so.0
+#6  0x000fff7da03c8 in start_thread (arg=0x80e680) at ./nptl/pthread_create.c:442
+#7  0x000fff7e09fdc in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:79
+
+Thread 2.12 (Thread 0xfffe6a0ee40 (LWP 4506) "telemetry2_0"):
+#3  0x000fff7ed3988 in nofifyDCMThread () from /usr/local/lib/libxconfclient.so.0
+
+Thread 2.11 (Thread 0xfffe740ee40 (LWP 4503) "telemetry2_0"):
+#3  0x000fff7c9b2d0 in subscribeSubdocForceReset () from /usr/local/lib/libwebconfig_framework.so.0
+
+Thread 2.10 (Thread 0xfffe7e0ee40 (LWP 4502) "telemetry2_0"):
+#3  0x000fff7c93f00 in display_subDocs () from /usr/local/lib/libwebconfig_framework.so.0
+
+Thread 2.9 (Thread 0xfffece0ee40 (LWP 4501) "telemetry2_0"):
+#1  0x000fff7c952a4 in messageQueueProcessing () from /usr/local/lib/libwebconfig_framework.so.0
+
+Thread 2.5 (Thread 0xfff4e0ee40 (LWP 4493) "telemetry2_0"):
+#5  0x000fff7f70934 in T2ER_EventDispatchThread () from /usr/local/lib/libbulkdata.so.0
+
+Thread 2.4 (Thread 0xfff580ee40 (LWP 4492) "telemetry2_0"):
+#5  0x000fff7f41e60 in TimeoutThread () from /usr/local/lib/libscheduler.so.0
+
+Thread 2.3 (Thread 0xfffed80ee40 (LWP 4487) "telemetry2_0"):
+#5  0x000fff6d49c78 in rtConnection_CallbackThread (data=0xaaafcd60) at /usr/rbus/src/rtmessage/rtConnection.c:1863
+
+Thread 2.2 (Thread 0xfff620ee40 (LWP 4486) "telemetry2_0"):
+#0  0x000fff7e0be30 in __libc_recv (fd=<optimized out>, buf=0xaaab004f0, len=6, flags=16384) at ../sysdeps/unix/sysv/linux/recv.c:28
+#1  0x000fff6d46a3c in rtConnection_ReadUntil (con=0xaaafcd60, buff=0xaaab004f0 "\252\252", count=6, timeout=-1) at /usr/rbus/src/rtmessage/rtConnection.c:497
+#2  0x000fff6d494b4 in rtConnection_Read (con=0xaaafcd60, timeout=-1) at /usr/rbus/src/rtmessage/rtConnection.c:1570
+#3  0x000fff6d49fbc in rtConnection_ReaderThread (data=0xaaafcd60) at /usr/rbus/src/rtmessage/rtConnection.c:1954
+#4  0x000fff7da03c8 in start_thread (arg=0x80e680) at ./nptl/pthread_create.c:442
+#5  0x000fff7e09fdc in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:79
+
+Thread 2.1 (Thread 0xfff7f5d020 (LWP 4485) "telemetry2_0"):
+#0  0x000fff7dd4aac in __GI___clock_nanosleep (clock_id=<optimized out>, clock_id@entry=0, flags=flags@entry=0, req=req@entry=0xfffa88, rem=rem@entry=0xfffa88) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x000fff7dd9d0c in __GI___nanosleep (req=req@entry=0xfffa88, rem=rem@entry=0xfffa88) at ../sysdeps/unix/sysv/linux/nanosleep.c:25
+#2  0x000fff7dd9bcc in __sleep (seconds=0) at ../sysdeps/posix/sleep.c:55
+#3  0x000aaa18b4 in t2DaemonMainModeInit ()
+#4  0x000aaa1a5c in main ()
+
+CONCLUSION
+Original first-upload disappearance is verified; its cause/signal is unknown.
+A fault-site crash backtrace was not obtained because the failure did not reproduce under correctly attached GDB.
+The snapshot above is diagnostic only, not evidence of the original failure location.
+Stop Step 6; runtime owner must reproduce/capture the normal-run failure before claiming successful validation.

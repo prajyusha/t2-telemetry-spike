@@ -1,0 +1,13 @@
+{
+  "Report": [
+    {
+      "SPIKE_DM": "false"
+    },
+    {
+      "SPIKE_GREP": "21"
+    },
+    {
+      "SPIKE_EVENT": "spike-event-ok"
+    }
+  ]
+}

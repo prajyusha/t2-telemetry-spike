@@ -1,0 +1,128 @@
+{
+  "scenario": "B",
+  "started": "2026-10-15T16:08:31.143849+00:00",
+  "pid": "28642",
+  "profile": {
+    "Name": "T2Spike",
+    "Description": "Docker three-marker spike",
+    "Version": "1",
+    "Protocol": "HTTP",
+    "EncodingType": "JSON",
+    "ReportingInterval": 30,
+    "TimeReference": "0001-01-01T00:00:00Z",
+    "RootName": "Report",
+    "Parameter": [
+      {
+        "type": "grep",
+        "marker": "SPIKE_GREP",
+        "search": "SPIKE_MATCH",
+        "logFile": "/mnt/L2_CONTAINER_SHARED_VOLUME/utils/t2-spike.log",
+        "use": "count",
+        "reportEmpty": true
+      },
+      {
+        "type": "event",
+        "name": "SPIKE_EVENT",
+        "eventName": "SPIKE_EVENT",
+        "component": "t2_spike",
+        "use": "absolute",
+        "reportEmpty": true
+      },
+      {
+        "type": "dataModel",
+        "name": "SPIKE_DM",
+        "reference": "Device.X_RDK_WebConfig.webcfgSubdocForceReset",
+        "reportEmpty": true
+      }
+    ],
+    "HTTP": {
+      "URL": "https://mockxconf:50051/dataLakeMockReportProfile",
+      "Compression": "None",
+      "Method": "POST",
+      "RequestURIParameter": []
+    },
+    "JSONEncoding": {
+      "ReportFormat": "NameValuePair",
+      "ReportTimestamp": "None"
+    },
+    "Hash": "t2-step10-B-v1"
+  },
+  "traced": true,
+  "cycles": [
+    {
+      "cycle": 1,
+      "checked_at": "2026-10-15T16:09:01.810737+00:00",
+      "pid": "28642",
+      "dm_getter": "Parameter  1:\n              Name  : Device.X_RDK_WebConfig.webcfgSubdocForceReset\n              Type  : string\n              Value : true",
+      "event": "t2_event_s returned 0",
+      "receipt": {
+        "line": "2026-10-15T16:09:00.888355594Z Data received: {\"Report\":[{\"SPIKE_DM\":\"true\"},{\"SPIKE_GREP\":\"1\"},{\"SPIKE_EVENT\":\"spike-event-ok\"}]}",
+        "body": {
+          "Report": [
+            {
+              "SPIKE_DM": "true"
+            },
+            {
+              "SPIKE_GREP": "1"
+            },
+            {
+              "SPIKE_EVENT": "spike-event-ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "checked_at": "2026-10-15T16:09:31.477209+00:00",
+      "pid": "28642",
+      "dm_getter": "Parameter  1:\n              Name  : Device.X_RDK_WebConfig.webcfgSubdocForceReset\n              Type  : string\n              Value : false",
+      "event": "t2_event_s returned 0",
+      "receipt": {
+        "line": "2026-10-15T16:09:30.884098260Z Data received: {\"Report\":[{\"SPIKE_DM\":\"false\"},{\"SPIKE_GREP\":\"1\"},{\"SPIKE_EVENT\":\"spike-event-ok\"}]}",
+        "body": {
+          "Report": [
+            {
+              "SPIKE_DM": "false"
+            },
+            {
+              "SPIKE_GREP": "1"
+            },
+            {
+              "SPIKE_EVENT": "spike-event-ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "checked_at": "2026-10-15T16:10:01.086586+00:00",
+      "pid": "28642",
+      "dm_getter": "Parameter  1:\n              Name  : Device.X_RDK_WebConfig.webcfgSubdocForceReset\n              Type  : string\n              Value : true",
+      "event": "t2_event_s returned 0",
+      "receipt": {
+        "line": "2026-10-15T16:10:00.951712719Z Data received: {\"Report\":[{\"SPIKE_DM\":\"true\"},{\"SPIKE_GREP\":\"1\"},{\"SPIKE_EVENT\":\"spike-event-ok\"}]}",
+        "body": {
+          "Report": [
+            {
+              "SPIKE_DM": "true"
+            },
+            {
+              "SPIKE_GREP": "1"
+            },
+            {
+              "SPIKE_EVENT": "spike-event-ok"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "cleanup": "TERM timeout; forced stop between scenarios",
+  "credentials_and_manifest_unchanged": true,
+  "backup_files_unchanged": true,
+  "asan_reports": "",
+  "final_pid": ""
+}

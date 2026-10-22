@@ -1,0 +1,42 @@
+{
+  "urn:settings:TelemetryProfile": {
+    "@type": "PermanentTelemetryProfile",
+    "telemetryProfile:name": "T2SpikeXconf",
+    "schedule": "*/1 * * * *",
+    "expires": 0,
+    "uploadRepository:URL": "https://mockxconf:50051/dataLakeMockReportProfile",
+    "uploadRepository:uploadProtocol": "HTTP",
+    "telemetryProfile": [
+      {
+        "header": "SPIKE_GREP",
+        "content": "SPIKE_MATCH",
+        "type": "/mnt/L2_CONTAINER_SHARED_VOLUME/utils/t2-spike.log",
+        "pollingFrequency": "0"
+      },
+      {
+        "header": "SPIKE_EVENT",
+        "content": "t2_spike",
+        "type": "<event>",
+        "pollingFrequency": "0"
+      },
+      {
+        "header": "SPIKE_DM",
+        "content": "Device.X_RDK_WebConfig.webcfgSubdocForceReset",
+        "type": "<message_bus>",
+        "pollingFrequency": "0"
+      },
+      {
+        "header": "MODEL_NAME",
+        "content": "Device.DeviceInfo.ModelName",
+        "type": "<message_bus>",
+        "pollingFrequency": "0"
+      },
+      {
+        "header": "DEVICE_MAC",
+        "content": "Device.DeviceInfo.X_COMCAST-COM_STB_MAC",
+        "type": "<message_bus>",
+        "pollingFrequency": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+Step 7 — 2026-10-15 UTC — single reproduction attempt
+Profile: T2Spike; Hash: t2-spike-step7-clean-v1; interval: 30 seconds.
+HTTP RequestURIParameter/RequestURIparamList experiment absent.
+Daemon PID: 4649.
+Inputs triggered by 11:27:52 UTC: fresh SPIKE_MATCH line, DM true -> false, event sender returned 0.
+Generated report at 11:28:17.162:
+{"Report":[{"SPIKE_DM":"false"},{"SPIKE_GREP":"1"},{"SPIKE_EVENT":"spike-event-ok"}]}
+No collector receipt observed through 11:28:31 UTC.
+
+Command:
+docker exec native-platform gdb -q -batch -ex 'set pagination off' -ex 'set follow-fork-mode child' -ex 'catch vfork' -ex run -ex 'set follow-fork-mode parent' -ex 'delete breakpoints' -ex continue -ex 'bt full' -ex 'thread apply all bt' --args /usr/local/bin/telemetry2_0
+
+CAPTURE LIMITATION:
+Both bt full and thread apply all bt executed at the real SIGSEGV.
+The tool truncated the middle of its output; a complete all-thread transcript was not retained.
+The inferior and GDB had exited when checked. No second reproduction was attempted.
+Below are verbatim available fault frames, not a full all-thread transcript.
+
+Thread 2.14 "telemetry2_0" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0xfffe3e0ee40 (LWP 4693)]
+0x000fff7c157c8 in prepareHttpUrl () from /usr/local/lib/libreportgen.so.0
+#0  0x000fff7c157c8 in prepareHttpUrl () from /usr/local/lib/libreportgen.so.0
+No symbol table info available.
+#1  0x000fff7f69bc8 in CollectAndReport () from /usr/local/lib/libbulkdata.so.0
+No symbol table info available.
+#2  0x000fff7da03c8 in start_thread (arg=0x80e680) at ./nptl/pthread_create.c:442
+   ret = <optimized out>
+   pd = 0x80e680
+   out = <optimized out>
+   unwind_buf = {cancel_jmp_buf = {{jmp_buf = {281474504912448, 281474790122288, 281474790122286, 8447616, 281474790122287, 0, 281474496462848, 8447616, 281474790125120, 281474496462848, 281474504910416, 11092844569367668131, 0, 11092844569706693343, 0, 0, 0, 0, 0, 0, 0, 0}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+   not_first_call = 0
+#3  0x000fff7e09fdc in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:79
+No locals.
+
+Thread 2.14 (Thread 0xfffe3e0ee40 (LWP 4693) "telemetry2_0"):
+#0  0x000fff7c157c8 in prepareHttpUrl () from /usr/local/lib/libreportgen.so.0
+#1  0x000fff7f69bc8 in CollectAndReport () from /usr/local/lib/libbulkdata.so.0
+#2  0x000fff7da03c8 in start_thread (arg=0x80e680) at ./nptl/pthread_create.c:442
+#3  0x000fff7e09fdc in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:79
+
+Thread 2.1 (Thread 0xfff7f5d020 (LWP 4649) "telemetry2_0"):
+#0  0x000fff7dd4aac in __GI___clock_nanosleep (clock_id=<optimized out>, clock_id@entry=0, flags=flags@entry=0, req=req@entry=0xfffa88, rem=rem@entry=0xfffa88) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x000fff7dd9d0c in __GI___nanosleep (req=req@entry=0xfffa88, rem=rem@entry=0xfffa88) at ../sysdeps/posix/sleep.c:25
+#2  0x000fff7dd9bcc in __sleep (seconds=0) at ../sysdeps/posix/sleep.c:55
+#3  0x000aaa18b4 in t2DaemonMainModeInit ()
+#4  0x000aaa1a5c in main ()

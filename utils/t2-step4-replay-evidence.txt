@@ -1,0 +1,141 @@
+Step 4 only — 2026-10-15 UTC
+Selected actual outputs; not a full terminal transcript.
+
+Scope:
+No upstream files edited; no XConf configuration work; no T2 restart.
+Collector-only compose recreation with --no-deps.
+CRL-L3 disabled; collector mTLS retained.
+No native client cert/key generation. No cached reports manually deleted.
+
+Flag source:
+docker-device-mgt-service-test/compose.yaml:33: ENABLE_CRL_L3=true (mock-xconf)
+mock-xconf/certs.sh:135-136 gates CRL PKI generation.
+mock-xconf/entrypoint.sh:66-67 gates CRL services.
+
+Override: utils/compose.step4-no-crl.yaml
+services:
+  mock-xconf:
+    environment:
+      ENABLE_CRL_L3: "false"
+
+Merged collector environment:
+{"ENABLE_CRL_L3": "false", "ENABLE_MTLS": "true"}
+
+Existing public client CA chain re-exported verbatim to shared_certs/client/ca-chain.pem.
+No private key included. Startup imported and consumed this public chain.
+Equivalent command:
+docker exec native-platform cp /etc/pki/Test-RDK-root/Test-RDK-client-ICA/Test-RDK-client-ICA_chain.pem /mnt/L2_CONTAINER_SHARED_VOLUME/shared_certs/client/ca-chain.pem
+
+Executed:
+docker compose -f docker-device-mgt-service-test/compose.yaml -f utils/compose.step4-no-crl.yaml up -d --no-deps --pull never mock-xconf
+
+BEFORE 10:25:55Z
+2817 /usr/local/bin/telemetry2_0
+ls -la /opt/.t2cachedmessages:
+total 16
+drw-r--r-- 2 root root 4096 Oct 15 09:40 .
+drwxr-xr-x 1 root root 4096 Oct 15 09:37 ..
+-rw-rw-rw- 1 root root 292 Oct 15 10:25 T2Spike
+Five JSON bodies: two cached SPIKE_DM=true, three cached SPIKE_DM=false.
+
+LISTEN:
+2026-10-15T10:28:28.519455628Z Data Lake Mock Server running at https://localhost:50051/
+
+Initial T2 TLS failures after collector recreation:
+20261015 10:28:33.075 curl failed: 60 (entry 0)
+20261015 10:29:03.071 curl failed: 60 (entry 0)
+curl_easy_perform failed: SSL peer certificate or SSH remote key was not OK
+
+Executed trust-only refresh:
+docker exec -e ENABLE_MTLS=false -e ENABLE_CRL_L3=false native-platform /usr/local/bin/certs.sh
+[certs] System CA trust store updated
+[certs] Server CA certificates imported
+[certs] Starting with mTLS: false
+[certs] mTLS disabled - skipping certificate operations
+
+OLD-CACHE REPLAY — T2:
+20261015 10:29:33.075 Report Sent Successfully over HTTP : 200
+20261015 10:29:33.075 Trying to send  5 cached reports
+20261015 10:29:33.103 Report Sent Successfully over HTTP : 200
+20261015 10:29:33.127 Report Sent Successfully over HTTP : 200
+20261015 10:29:33.149 Report Sent Successfully over HTTP : 200
+20261015 10:29:33.171 Report Sent Successfully over HTTP : 200
+20261015 10:29:33.193 Report Sent Successfully over HTTP : 200
+
+OLD-CACHE REPLAY — collector:
+2026-10-15T10:29:33.075306464Z Data received: {"Report":[{"SPIKE_DM":"false"}]}
+2026-10-15T10:29:33.103086214Z Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"true"}]}
+2026-10-15T10:29:33.127208756Z Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"true"}]}
+2026-10-15T10:29:33.149139589Z Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+2026-10-15T10:29:33.171194631Z Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+2026-10-15T10:29:33.193176547Z Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+
+AFTER 10:29:49Z
+2817 /usr/local/bin/telemetry2_0
+ls -la /opt/.t2cachedmessages:
+total 12
+drw-r--r-- 2 root root 4096 Oct 15 10:29 .
+drwxr-xr-x 1 root root 4096 Oct 15 09:37 ..
+No report file; zero cached bodies.
+Saved actual 10:29:33.103086214Z body to utils/received-cached-replay-2.json.
+
+Native credential SHA-256 before and after initial replay (identical):
+923acd4d8908409d3cf0a74d02dd52e571544ce175eb5df62256bceeef867e6b  /opt/certs/client.pem
+3d33c5f4353d0086ebf921e3b861fe5e6879c17963e537bf8f7a13e382256086  /opt/certs/client.p12
+
+NETWORK OUTAGE — no container stop:
+10:31:45Z: cache directory empty.
+before status=running started=2026-10-15T10:28:27.975377336Z
+Executed docker network disconnect docker-device-mgt-service-test_default mockxconf
+Waited 65 seconds (two 30-second reporting intervals).
+
+20261015 10:32:03.031 curl failed: 6 (entry 0)
+20261015 10:32:03.031 curl_easy_perform failed: Couldn't resolve host name
+20261015 10:32:03.031 Report Cached, No. of reportes cached = 1
+20261015 10:32:33.029 curl failed: 6 (entry 0)
+20261015 10:32:33.029 curl_easy_perform failed: Couldn't resolve host name
+20261015 10:32:33.029 Report Cached, No. of reportes cached = 2
+20261015 10:32:33.030 Writing 2 data to file /opt/.t2cachedmessages//T2Spike
+
+10:32:51Z cache directory:
+total 16
+drw-r--r-- 2 root root 4096 Oct 15 10:32 .
+drwxr-xr-x 1 root root 4096 Oct 15 09:37 ..
+-rw-rw-rw- 1 root root 117 Oct 15 10:32 T2Spike
+Two bodies, both {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}.
+outage status=running started=2026-10-15T10:28:27.975377336Z
+
+Executed docker network connect --alias mockxconf --alias mock-xconf docker-device-mgt-service-test_default mockxconf
+Reconnect completed at 10:32:51Z.
+
+NETWORK RECOVERY — T2:
+20261015 10:33:03.076 HTTP response code: 200
+20261015 10:33:03.076 Report Sent Successfully over HTTP : 200
+20261015 10:33:03.076 Trying to send  2 cached reports
+20261015 10:33:03.104 Report Sent Successfully over HTTP : 200
+20261015 10:33:03.129 Report Sent Successfully over HTTP : 200
+
+NETWORK RECOVERY — collector:
+2026-10-15T10:33:03.076867839Z Data received: {"Report":[{"SPIKE_DM":"false"}]}
+2026-10-15T10:33:03.104498464Z Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+2026-10-15T10:33:03.128795922Z Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+
+AFTER 10:33:13Z
+ls -la /opt/.t2cachedmessages:
+total 12
+drw-r--r-- 2 root root 4096 Oct 15 10:33 .
+drwxr-xr-x 1 root root 4096 Oct 15 09:37 ..
+Zero cached report bodies; no T2Spike file.
+2817 /usr/local/bin/telemetry2_0
+923acd4d8908409d3cf0a74d02dd52e571544ce175eb5df62256bceeef867e6b  /opt/certs/client.pem
+3d33c5f4353d0086ebf921e3b861fe5e6879c17963e537bf8f7a13e382256086  /opt/certs/client.p12
+Collector status=running started=2026-10-15T10:28:27.975377336Z (unchanged).
+Network restored: docker-device-mgt-service-test_default
+Aliases: ["mockxconf","mock-xconf"].
+
+Outcome:
+Old cache 5 -> 0, five cached receipt bodies and matching HTTP 200s.
+Network outage cache 0 -> 2 -> 0, two cached receipt bodies and matching HTTP 200s.
+Curl codes in Step 4: 60 during initial CA transition; 6 during network disconnection.
+No TLS verification bypass; no T2 restart; native credentials unchanged.
+Validation: receipt parses as JSON; SETUP.md links resolve; upstream git diff --stat empty.

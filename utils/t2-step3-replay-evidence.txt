@@ -1,0 +1,78 @@
+Step 3 only — 2026-10-15 UTC
+Selected actual outputs, not a full terminal transcript.
+
+Scope:
+No XConf configuration/source changes; no T2 restart; no manual certificate/key generation.
+Re-exported the existing public CA chain verbatim via a runtime-managed write to
+shared_certs/client/ca-chain.pem after reading the existing source and checking
+that it contained no PRIVATE KEY marker.
+Equivalent repeatable command (documented, not executed as a shell copy in this run):
+docker exec native-platform cp /etc/pki/Test-RDK-root/Test-RDK-client-ICA/Test-RDK-client-ICA_chain.pem /mnt/L2_CONTAINER_SHARED_VOLUME/shared_certs/client/ca-chain.pem
+
+Producer:
+docker-device-mgt-service-test/native-platform/certs.sh:156:
+    CLIENT_ICA_CHAIN="/etc/pki/${ROOT_CA_NAME}/${ICA_NAME}/${ICA_NAME}_chain.pem"
+docker-device-mgt-service-test/native-platform/certs.sh:193:
+    cp "$CLIENT_ICA_CHAIN" "$SHARED_CERTS_DIR/client/ca-chain.pem"
+
+BEFORE — inspection at 10:09:19Z
+2817 /usr/local/bin/telemetry2_0
+ls -la /opt/.t2cachedmessages:
+total 16
+drw-r--r-- 2 root root 4096 Oct 15 09:40 .
+drwxr-xr-x 1 root root 4096 Oct 15 09:37 ..
+-rw-rw-rw- 1 root root  292 Oct 15 10:09 T2Spike
+Five cached JSON bodies: two SPIKE_DM=true, three SPIKE_DM=false.
+20261015 10:09:03.017 ERROR LOG.RDK.T2- http_pool_post: Failed to establish connection using xPKI certificate: /opt/certs/client.p12, curl failed: 7 (entry 0)
+20261015 10:09:03.017 INFO LOG.RDK.T2- Report Cached, No. of reportes cached = 5
+2026-10-15T10:09:19.091737222Z [certs] Waiting for client certificates...
+
+PUBLIC-CHAIN HANDSHAKE:
+2026-10-15T10:10:17.432852096Z [certs] Waiting for client certificates...
+2026-10-15T10:10:17.433929971Z [certs] Client certificate chain found - importing to trust store
+2026-10-15T10:10:17.440064762Z [certs] Server CA chain (ICA + root) appended to trust store for operational certificates
+2026-10-15T10:10:17.440088804Z [certs] Client CA chain imported to trust store
+2026-10-15T10:10:17.440091346Z [certs] mTLS certificate trust flow established
+
+SUBSEQUENT AUTOMATIC STARTUP FAILURE:
+The pre-existing enabled CRL-L3 branch proceeded automatically after the wait:
+2026-10-15T10:10:17.440093512Z [certs] [CRL-L3] Starting L3 PKI generation...
+2026-10-15T10:10:17.447081763Z [crl-pki] Generating CRL mTLS test PKI...
+2026-10-15T10:10:17.832936429Z No cert in -in file '/etc/pki/test-crl/Test-CRL-Root/Test-CRL-ICA/certs/crl-client.pem' matches private key
+2026-10-15T10:10:17.832947429Z 20609588FFFF0000:error:05800074:x509 certificate routines:X509_check_private_key:key values mismatch:../crypto/x509/x509_cmp.c:408:
+2026-10-15T10:10:17.833320221Z [entrypoint] Certificate setup failed with exit code 1; aborting startup.
+docker inspect:
+status=exited exit=1 finished=2026-10-15T10:10:17.834658971Z
+
+AFTER — inspection at 10:11:46Z and final check:
+2817 /usr/local/bin/telemetry2_0
+ls -la /opt/.t2cachedmessages:
+total 16
+drw-r--r-- 2 root root 4096 Oct 15 09:40 .
+drwxr-xr-x 1 root root 4096 Oct 15 09:37 ..
+-rw-rw-rw- 1 root root  292 Oct 15 10:11 T2Spike
+20261015 10:11:03.023 ERROR LOG.RDK.T2- http_pool_post: Failed to establish connection using xPKI certificate: /opt/certs/client.p12, curl failed: 6 (entry 0)
+20261015 10:11:03.023 ERROR LOG.RDK.T2- curl_easy_perform failed: Couldn't resolve host name
+20261015 10:11:03.023 INFO LOG.RDK.T2- Report Cached, No. of reportes cached = 5
+20261015 10:11:33.023 ERROR LOG.RDK.T2- http_pool_post: Failed to establish connection using xPKI certificate: /opt/certs/client.p12, curl failed: 6 (entry 0)
+20261015 10:11:33.023 ERROR LOG.RDK.T2- curl_easy_perform failed: Couldn't resolve host name
+20261015 10:11:33.024 INFO LOG.RDK.T2- Report Cached, No. of reportes cached = 5
+20261015 10:11:33.024 DEBUG LOG.RDK.T2- Writing 5 data to file /opt/.t2cachedmessages//T2Spike
+
+Collector log counts since 2026-10-15T10:09:19Z:
+collector_listen_lines=0
+collector_receipt_lines=0
+Successful POST/cache replay lines after import: none observed.
+Replay: NO; five cached before, five cached after, zero received/replayed.
+No received-cached-replay-2.json saved: no received cached body exists for this attempt.
+Shared ca-chain.pem was consumed/removed by the collector startup import.
+
+Native credentials SHA-256 BEFORE and AFTER (identical):
+923acd4d8908409d3cf0a74d02dd52e571544ce175eb5df62256bceeef867e6b  /opt/certs/client.pem
+3d33c5f4353d0086ebf921e3b861fe5e6879c17963e537bf8f7a13e382256086  /opt/certs/client.p12
+
+Blocker:
+Collector startup aborts in CRL-L3 PKI setup on a certificate/private-key mismatch.
+Repairing or regenerating credentials is outside the explicitly permitted Step 3.
+Owner must authorize and resolve that startup failure before replay can be verified.
+The observation shell was terminated; the T2 process was not stopped.

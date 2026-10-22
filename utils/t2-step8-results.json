@@ -1,0 +1,43 @@
+{
+  "started": "2026-10-15T11:40:34.990848+00:00",
+  "pid": "14654",
+  "cycles": [
+    {
+      "cycle": 1,
+      "checked_at": "2026-10-15T11:41:10.392586+00:00",
+      "pid": "",
+      "pid_alive": false,
+      "receipt": [],
+      "event_result": "t2_event_s returned 0"
+    },
+    {
+      "cycle": 2,
+      "pid_alive": false,
+      "receipt": null,
+      "status": "Not run: stopped after crash"
+    },
+    {
+      "cycle": 3,
+      "pid_alive": false,
+      "receipt": null,
+      "status": "Not run: stopped after crash"
+    },
+    {
+      "cycle": 4,
+      "pid_alive": false,
+      "receipt": null,
+      "status": "Not run: stopped after crash"
+    },
+    {
+      "cycle": 5,
+      "pid_alive": false,
+      "receipt": null,
+      "status": "Not run: stopped after crash"
+    }
+  ],
+  "crashed": true,
+  "restoration": "RESTORED and hash-verified 46 original artifacts",
+  "credentials_unchanged": true,
+  "final_dm": "Parameter  1:\n              Name  : Device.X_RDK_WebConfig.webcfgSubdocForceReset\n              Type  : string\n              Value : false\n",
+  "containers": "native-platform Up 34 minutes\nmockxconf Up 34 minutes\n"
+}

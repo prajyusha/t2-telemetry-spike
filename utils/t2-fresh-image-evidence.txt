@@ -1,0 +1,105 @@
+2026-10-15 fresh-image phase. Selected actual outputs; not a full terminal transcript.
+Container repository HEAD: 696efa846cf56a558486894487be808ec69d7433
+Separately cloned telemetry HEAD: a2f2a545e4bd6170eac96f7c0c46fbd4df6f1654
+Native image: sha256:87ff28ada7cd788f8280834194c2dfd4ad119d2b0b52acc4bd44e5672042352f arm64
+Mock image: sha256:fc1be917169b36cc6bf88150c8082c9a70136adf89d45dcd3c4e395e09378816
+./build.sh exported both images. Native export:
+#118 unpacking to ghcr.io/rdkcentral/docker-device-mgt-service-test/native-platform:latest 8.3s done
+#118 DONE 19.8s
+docker compose up -d --force-recreate mock-xconf l2-container completed.
+native-platform Up 12 seconds
+mockxconf Up 12 seconds
+Startup still reported:
+/usr/local/bin/entrypoint.sh: line 53: /usr/local/bin/tr69hostif: No such file or directory
+T2 required manual launch. Event sender recompiled successfully with -Wall -Wextra -Werror.
+
+First fresh JSON PoC:
+setvalues succeeded..
+t2_event_s returned 0
+20261015 09:36:18.896 INFO LOG.RDK.T2- cJSON Report = {"Report":[{"SPIKE_DM":"true"},{"SPIKE_GREP":"1"},{"SPIKE_EVENT":"spike-event-ok"}]}
+No T2 PID or cached directory found after this cycle.
+Subsequent daemon run under GDB remained alive; no fresh-image SIGSEGV was captured in that run.
+
+Fresh RBUS gap:
+rbus_get for Device.DeviceInfo.ModelName failed with error: Entry not found error
+Failed to get the data. Error : 5
+_setInternal for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.ConfigURL failed with error: Entry not found error
+setvalues failed with return value: 5
+No successful XConf load; DCM response was not edited.
+
+Default-trust curl probe:
+curl: (60) SSL certificate problem: authority and subject key identifier mismatch
+HTTP 000
+Explicit shared-root CA probe:
+--cacert /mnt/L2_CONTAINER_SHARED_VOLUME/shared_certs/server/root_ca.pem
+Message received at Data Lake Mock Server
+HTTP 200
+Both probes used /opt/certs/client.pem as client cert/key; no -k was used.
+
+Public CA hashes (installed vs shared) differed:
+root installed 42a48e128cdaee09accbcdee47dbe1da3a85a147c9b53b40439bf9f2c495f04e
+root shared    d6b19ce708c15389c0d65e48dddd5e25d6d5ad2f0b40898c770a86aa84834ec1
+intermediate installed e2aa0649b8b1d93d43a8d5e9474cce63a933ab74e15b270c326b2299b3ca99c9
+intermediate shared    b0cde7c9434fb752673ac3bd63c1612e338cbcc952449797ca011b44f09c95fb
+openssl verify returned error 30 authority and subject key identifier mismatch.
+
+Actual T2 TLS failure caching:
+20261015 09:37:22.962 ERROR LOG.RDK.T2- http_pool_post: Failed to establish connection using xPKI certificate: /opt/certs/client.p12, curl failed: 60 (entry 0)
+20261015 09:37:22.962 INFO LOG.RDK.T2- Report Cached, No. of reportes cached = 1
+20261015 09:37:52.962 INFO LOG.RDK.T2- Report Cached, No. of reportes cached = 2
+/opt/.t2cachedmessages/T2Spike contained newline-separated report JSON with REPORT_TYPE=CACHED.
+
+Executed environment repair using existing repository setup script:
+docker exec -e ENABLE_MTLS=false -e ENABLE_CRL_L3=false native-platform /usr/local/bin/certs.sh
+[certs] System CA trust store updated
+[certs] Server CA certificates imported
+[certs] Starting with mTLS: false
+[certs] mTLS disabled - skipping certificate operations
+These variables applied only to the setup subprocess; T2 continued using mTLS and existing client credentials.
+Default-trust authenticated curl then returned HTTP 200.
+
+Verified real T2 delivery and cache replay:
+20261015 09:39:22.967 INFO LOG.RDK.T2- Report Sent Successfully over HTTP : 200
+20261015 09:39:22.967 INFO LOG.RDK.T2- Trying to send  4 cached reports
+20261015 09:39:22.995 INFO LOG.RDK.T2- Report Sent Successfully over HTTP : 200
+20261015 09:39:23.019 INFO LOG.RDK.T2- Report Sent Successfully over HTTP : 200
+20261015 09:39:23.042 INFO LOG.RDK.T2- Report Sent Successfully over HTTP : 200
+20261015 09:39:23.064 INFO LOG.RDK.T2- Report Sent Successfully over HTTP : 200
+/opt/.t2cachedmessages listing: total 0
+Collector log:
+Data received: {"Report":[{"SPIKE_DM":"false"},{"SPIKE_GREP":"1"}]}
+Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+Data received: {"Report":[{"REPORT_TYPE":"CACHED"},{"SPIKE_DM":"false"}]}
+Data received: {"Report":[{"SPIKE_DM":"true"},{"SPIKE_EVENT":"spike-event-ok"}]}
+20261015 09:39:52.961 INFO LOG.RDK.T2- Report Sent Successfully over HTTP : 200
+
+Second outage test:
+docker stop --timeout 5 mockxconf
+wait 35 seconds; inspect; docker start mockxconf; wait 38 seconds; inspect.
+OUTAGE
+2817
+20261015 09:40:23.038 ERROR LOG.RDK.T2- http_pool_post: Failed to establish connection using xPKI certificate: /opt/certs/client.p12, curl failed: 6 (entry 0)
+20261015 09:40:23.038 ERROR LOG.RDK.T2- curl_easy_perform failed: Couldn't resolve host name
+20261015 09:40:23.038 INFO LOG.RDK.T2- Report Cached, No. of reportes cached = 1
+/opt/.t2cachedmessages/T2Spike: 57 bytes
+docker start output: mockxconf
+RECOVERY
+2817
+20261015 09:40:52.915 INFO LOG.RDK.T2- Report Cached, No. of reportes cached = 2
+20261015 09:41:22.914 INFO LOG.RDK.T2- Report Cached, No. of reportes cached = 3
+/opt/.t2cachedmessages/T2Spike: 173 bytes
+Immediate post-restart replay NOT observed.
+
+Follow-up readiness check (docker logs/ps/exec):
+TIMEOUT: RLE RleMessageType.EXEC_ONESHOT timed out after 300s
+Bounded follow-up via Python subprocess.run(..., timeout=15) inside a long-running tool:
+TIMEOUT: Command execution timed out after 180 seconds
+No further container health, final TR-181 restore, or second-outage replay claimed.
+All known long-running command sessions were explicitly terminated, including final cleanup of:
+Fresh GDB session (832174037), trust-refresh session (1434747087), and second-outage session (1498332478).
+All three final terminate_process calls returned TERMINATED.
+The final debugger output included repeated curl error (7) for the collector URL after the earlier error (6), with certificate-selector NO_RETRY.
+Terminating the debugger does not establish the final daemon/container state.
+The mock reset value was restored to false once, then deliberately changed back to true for the last event/outage phase; last verified value is true.

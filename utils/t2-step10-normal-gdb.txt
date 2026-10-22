@@ -1,0 +1,307 @@
+Catchpoint 1 (vfork)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/aarch64-linux-gnu/libthread_db.so.1".
+[Attaching after Thread 0xfffff7f5d020 (LWP 39603) fork to child process 39605]
+[New inferior 2 (process 39605)]
+**    ERROR!  Could not open configuration file (/etc/debug.ini)!    **
+Parsing debug config file /etc/debug.ini failed
+[Detaching after fork from parent process 39603]
+[Inferior 1 (process 39603) detached]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/aarch64-linux-gnu/libthread_db.so.1".
+ certsel_findCert: uri [file:///opt/certs/client.p12]
+ certsel_findCert: credref [cfgOpsCert]
+ rdkcertselector_new:hrot file, /etc/ssl/certsel/hrot.properties, not found
+[New Thread 0xfffff620ee40 (LWP 39606)]
+[New Thread 0xfffff580ee40 (LWP 39607)]
+[Switching to Thread 0xfffff7f5d020 (LWP 39605)]
+
+Thread 2.1 "telemetry2_0" hit Catchpoint 1 (vforked process 39608), clone () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:64
+64	../sysdeps/unix/sysv/linux/aarch64/clone.S: No such file or directory.
+[Detaching after vfork from child process 39608]
+[Detaching after vfork from child process 39610]
+[New Thread 0xfffff4e0ee40 (LWP 39612)]
+[New Thread 0xffffefe0ee40 (LWP 39613)]
+[Detaching after vfork from child process 39614]
+[New Thread 0xffffef40ee40 (LWP 39616)]
+[New Thread 0xffffeea0ee40 (LWP 39617)]
+[New Thread 0xffffee00ee40 (LWP 39618)]
+[Detaching after vfork from child process 39619]
+[New Thread 0xffffed60ee40 (LWP 39621)]
+[New Thread 0xffffecc0ee40 (LWP 39622)]
+[New Thread 0xffffe3e0ee40 (LWP 39623)]
+[Detaching after vfork from child process 39624]
+[New Thread 0xffffe340ee40 (LWP 39626)]
+[New Thread 0xffffe2a0ee40 (LWP 39627)]
+[Thread 0xffffe3e0ee40 (LWP 39623) exited]
+[New Thread 0xffffe3e0ee40 (LWP 39634)]
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39635)]
+[Thread 0xffffe200ee40 (LWP 39635) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39642)]
+[Thread 0xffffe200ee40 (LWP 39642) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39649)]
+[Thread 0xffffe200ee40 (LWP 39649) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39656)]
+[Thread 0xffffe200ee40 (LWP 39656) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39663)]
+[Thread 0xffffe200ee40 (LWP 39663) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39670)]
+[Thread 0xffffe200ee40 (LWP 39670) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39677)]
+[Thread 0xffffe200ee40 (LWP 39677) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39684)]
+[Thread 0xffffe200ee40 (LWP 39684) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39691)]
+[Thread 0xffffe200ee40 (LWP 39691) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39698)]
+[Thread 0xffffe200ee40 (LWP 39698) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39705)]
+[Thread 0xffffe200ee40 (LWP 39705) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39712)]
+[Thread 0xffffe200ee40 (LWP 39712) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39719)]
+[Thread 0xffffe200ee40 (LWP 39719) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39726)]
+[Thread 0xffffe200ee40 (LWP 39726) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39733)]
+[Thread 0xffffe200ee40 (LWP 39733) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39740)]
+[Thread 0xffffe200ee40 (LWP 39740) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39747)]
+[Thread 0xffffe200ee40 (LWP 39747) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39754)]
+[Thread 0xffffe200ee40 (LWP 39754) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39761)]
+[Thread 0xffffe200ee40 (LWP 39761) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39768)]
+[Thread 0xffffe200ee40 (LWP 39768) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39775)]
+[Thread 0xffffe200ee40 (LWP 39775) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39782)]
+[Thread 0xffffe200ee40 (LWP 39782) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39789)]
+[Thread 0xffffe200ee40 (LWP 39789) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39796)]
+[Thread 0xffffe200ee40 (LWP 39796) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39803)]
+[Thread 0xffffe200ee40 (LWP 39803) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39810)]
+[Thread 0xffffe200ee40 (LWP 39810) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39817)]
+[Thread 0xffffe200ee40 (LWP 39817) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39824)]
+[Thread 0xffffe200ee40 (LWP 39824) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39831)]
+[Thread 0xffffe200ee40 (LWP 39831) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY
+ rdkcertselector_getCert:file not marked bad
+ rdkcertselector_getCert:get passcode (0)
+ rdkcertselector_getCert:got the passcode
+ rdkcertselector_getCert:returning [file:///opt/certs/client.p12:*****] index [0]
+ rdkcertselector_getCert:returning 0
+[New Thread 0xffffe200ee40 (LWP 39838)]
+[Thread 0xffffe200ee40 (LWP 39838) exited]
+ rdkcertselector_setCurlStatus:good status, indx [0]
+ rdkcertselector_setCurlStatus:good status; NO_RETRY

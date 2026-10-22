@@ -1,0 +1,1060 @@
+checking file source/t2parser/t2parser.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored
+checking file source/t2parser/t2parser.c
+Initialization patch already applied.
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+configure.ac:74: warning: The macro `AC_HEADER_STDC' is obsolete.
+configure.ac:74: You should run autoupdate.
+./lib/autoconf/headers.m4:704: AC_HEADER_STDC is expanded from...
+configure.ac:74: the top level
+configure.ac:103: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:103: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:103: the top level
+configure.ac:117: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:117: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:117: the top level
+source/Makefile.am:86: warning: source file 't2ssp/ssp_main.c' is in a subdirectory,
+source/Makefile.am:86: but option 'subdir-objects' is disabled
+automake: warning: possible forward-incompatibility.
+automake: At least one source file is in a subdirectory, but the 'subdir-objects'
+automake: automake option hasn't been enabled.  For now, the corresponding output
+automake: object file(s) will be placed in the top-level directory.  However, this
+automake: behavior may change in a future Automake major version, with object
+automake: files being placed in the same subdirectory as the corresponding sources.
+automake: You are advised to start using 'subdir-objects' option throughout your
+automake: project, to avoid future incompatibilities.
+source/Makefile.am:86: warning: source file 't2ssp/ssp_action.c' is in a subdirectory,
+source/Makefile.am:86: but option 'subdir-objects' is disabled
+source/Makefile.am:86: warning: source file 't2ssp/ssp_messagebus_interface.c' is in a subdirectory,
+source/Makefile.am:86: but option 'subdir-objects' is disabled
+source/Makefile.am:86: warning: source file 't2ssp/dm_pack_datamodel.c' is in a subdirectory,
+source/Makefile.am:86: but option 'subdir-objects' is disabled
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... unsupported
+checking for gcc option to enable C99 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert aarch64-unknown-linux-gnu file names to aarch64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert aarch64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+./configure: line 13017: GTEST_ENABLE_FLAG: command not found
+Gtestapp is disabled
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) unsupported
+checking for gcc option to enable C99 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking whether ln -s works... yes
+checking how to run the C preprocessor... gcc -E
+checking how to run the C++ preprocessor... g++ -E
+checking whether make supports nested variables... (cached) yes
+checking for egrep... (cached) /usr/bin/grep -E
+checking for uint8_t... yes
+checking for GNU libc compatible malloc... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for glib-2.0 >= 2.24.0... yes
+ccsp support is disabled
+rdklogger is enabled
+webconfig-framework is enabled
+Extender device  support is disabled
+libsyswrapper is disabled
+SUPPORT_TYPING_FIELDS is disabled
+privacycontrol is disabled
+mountutils is disabled
+ThreadSanitizer is disabled
+configure: Dynamic table support: true
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating source/Makefile
+config.status: creating source/bulkdata/Makefile
+config.status: creating source/reportgen/Makefile
+config.status: creating source/scheduler/Makefile
+config.status: creating source/ccspinterface/Makefile
+config.status: creating source/t2parser/Makefile
+config.status: creating source/xconf-client/Makefile
+config.status: creating source/utils/Makefile
+config.status: creating source/commonlib/Makefile
+config.status: creating source/protocol/Makefile
+config.status: creating source/dcautil/Makefile
+config.status: creating source/protocol/http/Makefile
+config.status: creating source/protocol/rbusMethod/Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Making clean in source
+make[1]: Entering directory '/opt/t2-patched-src/source'
+Making clean in utils
+make[2]: Entering directory '/opt/t2-patched-src/source/utils'
+test -z "libt2utils.la" || rm -f libt2utils.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/utils'
+Making clean in ccspinterface
+make[2]: Entering directory '/opt/t2-patched-src/source/ccspinterface'
+test -z "libccspinterface.la" || rm -f libccspinterface.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/ccspinterface'
+Making clean in t2parser
+make[2]: Entering directory '/opt/t2-patched-src/source/t2parser'
+test -z "libt2parser.la" || rm -f libt2parser.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/t2parser'
+Making clean in xconf-client
+make[2]: Entering directory '/opt/t2-patched-src/source/xconf-client'
+test -z "libxconfclient.la" || rm -f libxconfclient.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/xconf-client'
+Making clean in protocol
+make[2]: Entering directory '/opt/t2-patched-src/source/protocol'
+Making clean in http
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol/http'
+test -z "libhttp.la" || rm -f libhttp.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol/http'
+Making clean in rbusMethod
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol/rbusMethod'
+test -z "librbusmethod.la" || rm -f librbusmethod.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol/rbusMethod'
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol'
+rm -rf .libs _libs
+rm -f *.lo
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol'
+make[2]: Leaving directory '/opt/t2-patched-src/source/protocol'
+Making clean in reportgen
+make[2]: Entering directory '/opt/t2-patched-src/source/reportgen'
+test -z "libreportgen.la" || rm -f libreportgen.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/reportgen'
+Making clean in scheduler
+make[2]: Entering directory '/opt/t2-patched-src/source/scheduler'
+test -z "libscheduler.la" || rm -f libscheduler.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/scheduler'
+Making clean in dcautil
+make[2]: Entering directory '/opt/t2-patched-src/source/dcautil'
+test -z "libdcautil.la" || rm -f libdcautil.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/dcautil'
+Making clean in commonlib
+make[2]: Entering directory '/opt/t2-patched-src/source/commonlib'
+ rm -f telemetry2_0_client
+test -z "libtelemetry_msgsender.la" || rm -f libtelemetry_msgsender.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/commonlib'
+Making clean in bulkdata
+make[2]: Entering directory '/opt/t2-patched-src/source/bulkdata'
+test -z "libbulkdata.la" || rm -f libbulkdata.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source/bulkdata'
+make[2]: Entering directory '/opt/t2-patched-src/source'
+ rm -f telemetry2_0
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory '/opt/t2-patched-src/source'
+make[1]: Leaving directory '/opt/t2-patched-src/source'
+make[1]: Entering directory '/opt/t2-patched-src'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Leaving directory '/opt/t2-patched-src'
+Making all in source
+make[1]: Entering directory '/opt/t2-patched-src/source'
+Making all in utils
+make[2]: Entering directory '/opt/t2-patched-src/source/utils'
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED   -DRDK_LOGGER  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-vector.lo -MD -MP -MF .deps/libt2utils_la-vector.Tpo -c -o libt2utils_la-vector.lo `test -f 'vector.c' || echo './'`vector.c
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED   -DRDK_LOGGER  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2collection.lo -MD -MP -MF .deps/libt2utils_la-t2collection.Tpo -c -o libt2utils_la-t2collection.lo `test -f 't2collection.c' || echo './'`t2collection.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-vector.lo -MD -MP -MF .deps/libt2utils_la-vector.Tpo -c vector.c  -fPIC -DPIC -o .libs/libt2utils_la-vector.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2collection.lo -MD -MP -MF .deps/libt2utils_la-t2collection.Tpo -c t2collection.c  -fPIC -DPIC -o .libs/libt2utils_la-t2collection.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-vector.lo -MD -MP -MF .deps/libt2utils_la-vector.Tpo -c vector.c -o libt2utils_la-vector.o >/dev/null 2>&1
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2collection.lo -MD -MP -MF .deps/libt2utils_la-t2collection.Tpo -c t2collection.c -o libt2utils_la-t2collection.o >/dev/null 2>&1
+mv -f .deps/libt2utils_la-vector.Tpo .deps/libt2utils_la-vector.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED   -DRDK_LOGGER  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2log_wrapper.lo -MD -MP -MF .deps/libt2utils_la-t2log_wrapper.Tpo -c -o libt2utils_la-t2log_wrapper.lo `test -f 't2log_wrapper.c' || echo './'`t2log_wrapper.c
+mv -f .deps/libt2utils_la-t2collection.Tpo .deps/libt2utils_la-t2collection.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED   -DRDK_LOGGER  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2MtlsUtils.lo -MD -MP -MF .deps/libt2utils_la-t2MtlsUtils.Tpo -c -o libt2utils_la-t2MtlsUtils.lo `test -f 't2MtlsUtils.c' || echo './'`t2MtlsUtils.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2log_wrapper.lo -MD -MP -MF .deps/libt2utils_la-t2log_wrapper.Tpo -c t2log_wrapper.c  -fPIC -DPIC -o .libs/libt2utils_la-t2log_wrapper.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2MtlsUtils.lo -MD -MP -MF .deps/libt2utils_la-t2MtlsUtils.Tpo -c t2MtlsUtils.c  -fPIC -DPIC -o .libs/libt2utils_la-t2MtlsUtils.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2log_wrapper.lo -MD -MP -MF .deps/libt2utils_la-t2log_wrapper.Tpo -c t2log_wrapper.c -o libt2utils_la-t2log_wrapper.o >/dev/null 2>&1
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2MtlsUtils.lo -MD -MP -MF .deps/libt2utils_la-t2MtlsUtils.Tpo -c t2MtlsUtils.c -o libt2utils_la-t2MtlsUtils.o >/dev/null 2>&1
+mv -f .deps/libt2utils_la-t2log_wrapper.Tpo .deps/libt2utils_la-t2log_wrapper.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED   -DRDK_LOGGER  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-persistence.lo -MD -MP -MF .deps/libt2utils_la-persistence.Tpo -c -o libt2utils_la-persistence.lo `test -f 'persistence.c' || echo './'`persistence.c
+mv -f .deps/libt2utils_la-t2MtlsUtils.Tpo .deps/libt2utils_la-t2MtlsUtils.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED   -DRDK_LOGGER  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2common.lo -MD -MP -MF .deps/libt2utils_la-t2common.Tpo -c -o libt2utils_la-t2common.lo `test -f 't2common.c' || echo './'`t2common.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-persistence.lo -MD -MP -MF .deps/libt2utils_la-persistence.Tpo -c persistence.c  -fPIC -DPIC -o .libs/libt2utils_la-persistence.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2common.lo -MD -MP -MF .deps/libt2utils_la-t2common.Tpo -c t2common.c  -fPIC -DPIC -o .libs/libt2utils_la-t2common.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-persistence.lo -MD -MP -MF .deps/libt2utils_la-persistence.Tpo -c persistence.c -o libt2utils_la-persistence.o >/dev/null 2>&1
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/ccsp -I../../include -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -DUNUSED -DRDK_LOGGER -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2utils_la-t2common.lo -MD -MP -MF .deps/libt2utils_la-t2common.Tpo -c t2common.c -o libt2utils_la-t2common.o >/dev/null 2>&1
+mv -f .deps/libt2utils_la-persistence.Tpo .deps/libt2utils_la-persistence.Plo
+mv -f .deps/libt2utils_la-t2common.Tpo .deps/libt2utils_la-t2common.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc -DUNUSED   -DRDK_LOGGER  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC   -lrdkloggers -L/usr/local/lib -lglib-2.0 -o libt2utils.la -rpath /usr/local/lib libt2utils_la-vector.lo libt2utils_la-t2collection.lo libt2utils_la-t2log_wrapper.lo libt2utils_la-t2MtlsUtils.lo libt2utils_la-persistence.lo libt2utils_la-t2common.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libt2utils_la-vector.o .libs/libt2utils_la-t2collection.o .libs/libt2utils_la-t2log_wrapper.o .libs/libt2utils_la-t2MtlsUtils.o .libs/libt2utils_la-persistence.o .libs/libt2utils_la-t2common.o   /usr/local/lib/librdkloggers.so -L/usr/local/lib -lglib-2.0    -Wl,-soname -Wl,libt2utils.so.0 -o .libs/libt2utils.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libt2utils.so.0" && ln -s "libt2utils.so.0.0.0" "libt2utils.so.0")
+libtool: link: (cd ".libs" && rm -f "libt2utils.so" && ln -s "libt2utils.so.0.0.0" "libt2utils.so")
+libtool: link: ( cd ".libs" && rm -f "libt2utils.la" && ln -s "../libt2utils.la" "libt2utils.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/utils'
+Making all in ccspinterface
+make[2]: Entering directory '/opt/t2-patched-src/source/ccspinterface'
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/utils -I../../source/t2ssp -I../../source/bulkdata -I../../source/reportgen -I../../source/utils -I../../source/dcautil   -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libccspinterface_la-busInterface.lo -MD -MP -MF .deps/libccspinterface_la-busInterface.Tpo -c -o libccspinterface_la-busInterface.lo `test -f 'busInterface.c' || echo './'`busInterface.c
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/utils -I../../source/t2ssp -I../../source/bulkdata -I../../source/reportgen -I../../source/utils -I../../source/dcautil   -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libccspinterface_la-rbusInterface.lo -MD -MP -MF .deps/libccspinterface_la-rbusInterface.Tpo -c -o libccspinterface_la-rbusInterface.lo `test -f 'rbusInterface.c' || echo './'`rbusInterface.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/utils -I../../source/t2ssp -I../../source/bulkdata -I../../source/reportgen -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libccspinterface_la-busInterface.lo -MD -MP -MF .deps/libccspinterface_la-busInterface.Tpo -c busInterface.c  -fPIC -DPIC -o .libs/libccspinterface_la-busInterface.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/utils -I../../source/t2ssp -I../../source/bulkdata -I../../source/reportgen -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libccspinterface_la-rbusInterface.lo -MD -MP -MF .deps/libccspinterface_la-rbusInterface.Tpo -c rbusInterface.c  -fPIC -DPIC -o .libs/libccspinterface_la-rbusInterface.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/utils -I../../source/t2ssp -I../../source/bulkdata -I../../source/reportgen -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libccspinterface_la-busInterface.lo -MD -MP -MF .deps/libccspinterface_la-busInterface.Tpo -c busInterface.c -o libccspinterface_la-busInterface.o >/dev/null 2>&1
+mv -f .deps/libccspinterface_la-busInterface.Tpo .deps/libccspinterface_la-busInterface.Plo
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/utils -I../../source/t2ssp -I../../source/bulkdata -I../../source/reportgen -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libccspinterface_la-rbusInterface.lo -MD -MP -MF .deps/libccspinterface_la-rbusInterface.Tpo -c rbusInterface.c -o libccspinterface_la-rbusInterface.o >/dev/null 2>&1
+mv -f .deps/libccspinterface_la-rbusInterface.Tpo .deps/libccspinterface_la-rbusInterface.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lrbus -lglib-2.0  -L/usr/local/lib -lglib-2.0 -o libccspinterface.la -rpath /usr/local/lib libccspinterface_la-busInterface.lo libccspinterface_la-rbusInterface.lo   
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libccspinterface_la-busInterface.o .libs/libccspinterface_la-rbusInterface.o   -lrbus -L/usr/local/lib -lglib-2.0    -Wl,-soname -Wl,libccspinterface.so.0 -o .libs/libccspinterface.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libccspinterface.so.0" && ln -s "libccspinterface.so.0.0.0" "libccspinterface.so.0")
+libtool: link: (cd ".libs" && rm -f "libccspinterface.so" && ln -s "libccspinterface.so.0.0.0" "libccspinterface.so")
+libtool: link: ( cd ".libs" && rm -f "libccspinterface.la" && ln -s "../libccspinterface.la" "libccspinterface.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/ccspinterface'
+Making all in t2parser
+make[2]: Entering directory '/opt/t2-patched-src/source/t2parser'
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/xconf-client -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/dcautil -I../../source/utils  -DENABLE_DYNAMIC_TABLE_SUPPORT  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2parser_la-t2parser.lo -MD -MP -MF .deps/libt2parser_la-t2parser.Tpo -c -o libt2parser_la-t2parser.lo `test -f 't2parser.c' || echo './'`t2parser.c
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/xconf-client -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/dcautil -I../../source/utils  -DENABLE_DYNAMIC_TABLE_SUPPORT  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2parser_la-t2parserxconf.lo -MD -MP -MF .deps/libt2parser_la-t2parserxconf.Tpo -c -o libt2parser_la-t2parserxconf.lo `test -f 't2parserxconf.c' || echo './'`t2parserxconf.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/xconf-client -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/dcautil -I../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2parser_la-t2parser.lo -MD -MP -MF .deps/libt2parser_la-t2parser.Tpo -c t2parser.c  -fPIC -DPIC -o .libs/libt2parser_la-t2parser.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/xconf-client -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/dcautil -I../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2parser_la-t2parserxconf.lo -MD -MP -MF .deps/libt2parser_la-t2parserxconf.Tpo -c t2parserxconf.c  -fPIC -DPIC -o .libs/libt2parser_la-t2parserxconf.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/xconf-client -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/dcautil -I../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2parser_la-t2parserxconf.lo -MD -MP -MF .deps/libt2parser_la-t2parserxconf.Tpo -c t2parserxconf.c -o libt2parser_la-t2parserxconf.o >/dev/null 2>&1
+mv -f .deps/libt2parser_la-t2parserxconf.Tpo .deps/libt2parser_la-t2parserxconf.Plo
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../include -I../../source/xconf-client -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/dcautil -I../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libt2parser_la-t2parser.lo -MD -MP -MF .deps/libt2parser_la-t2parser.Tpo -c t2parser.c -o libt2parser_la-t2parser.o >/dev/null 2>&1
+mv -f .deps/libt2parser_la-t2parser.Tpo .deps/libt2parser_la-t2parser.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -lmsgpackc -L/usr/local/lib -lglib-2.0 -o libt2parser.la -rpath /usr/local/lib libt2parser_la-t2parser.lo libt2parser_la-t2parserxconf.lo ../../source/ccspinterface/libccspinterface.la ../../source/utils/libt2utils.la 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libt2parser_la-t2parser.o .libs/libt2parser_la-t2parserxconf.o   -Wl,-rpath -Wl,/opt/t2-patched-src/source/ccspinterface/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/utils/.libs -lmsgpackc -L/usr/local/lib -lglib-2.0 ../../source/ccspinterface/.libs/libccspinterface.so ../../source/utils/.libs/libt2utils.so    -Wl,-soname -Wl,libt2parser.so.0 -o .libs/libt2parser.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libt2parser.so.0" && ln -s "libt2parser.so.0.0.0" "libt2parser.so.0")
+libtool: link: (cd ".libs" && rm -f "libt2parser.so" && ln -s "libt2parser.so.0.0.0" "libt2parser.so")
+libtool: link: ar cr .libs/libt2parser.a  libt2parser_la-t2parser.o libt2parser_la-t2parserxconf.o
+libtool: link: ranlib .libs/libt2parser.a
+libtool: link: ( cd ".libs" && rm -f "libt2parser.la" && ln -s "../libt2parser.la" "libt2parser.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/t2parser'
+Making all in xconf-client
+make[2]: Entering directory '/opt/t2-patched-src/source/xconf-client'
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../include -I../../source -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/t2parser -I../../source/dcautil -I../../source/utils -I../../source/protocol/http  -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD   -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libxconfclient_la-xconfclient.lo -MD -MP -MF .deps/libxconfclient_la-xconfclient.Tpo -c -o libxconfclient_la-xconfclient.lo `test -f 'xconfclient.c' || echo './'`xconfclient.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../include -I../../source -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/t2parser -I../../source/dcautil -I../../source/utils -I../../source/protocol/http -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libxconfclient_la-xconfclient.lo -MD -MP -MF .deps/libxconfclient_la-xconfclient.Tpo -c xconfclient.c  -fPIC -DPIC -o .libs/libxconfclient_la-xconfclient.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../include -I../../source -I../../source/bulkdata -I../../source/reportgen -I../../source/ccspinterface -I../../source/t2parser -I../../source/dcautil -I../../source/utils -I../../source/protocol/http -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libxconfclient_la-xconfclient.lo -MD -MP -MF .deps/libxconfclient_la-xconfclient.Tpo -c xconfclient.c -o libxconfclient_la-xconfclient.o >/dev/null 2>&1
+mv -f .deps/libxconfclient_la-xconfclient.Tpo .deps/libxconfclient_la-xconfclient.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc -DLIBRDKCERTSEL_BUILD   -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lcjson -lcurl -lRdkCertSelector -lrdkconfig -L/usr/local/lib -lglib-2.0 -o libxconfclient.la -rpath /usr/local/lib libxconfclient_la-xconfclient.lo ../../source/t2parser/libt2parser.la ../../source/ccspinterface/libccspinterface.la 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libxconfclient_la-xconfclient.o   -Wl,-rpath -Wl,/opt/t2-patched-src/source/t2parser/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/ccspinterface/.libs -lcjson -lcurl /usr/local/lib/libRdkCertSelector.so -lrdkconfig -L/usr/local/lib -lglib-2.0 ../../source/t2parser/.libs/libt2parser.so ../../source/ccspinterface/.libs/libccspinterface.so    -Wl,-soname -Wl,libxconfclient.so.0 -o .libs/libxconfclient.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxconfclient.so.0" && ln -s "libxconfclient.so.0.0.0" "libxconfclient.so.0")
+libtool: link: (cd ".libs" && rm -f "libxconfclient.so" && ln -s "libxconfclient.so.0.0.0" "libxconfclient.so")
+libtool: link: ( cd ".libs" && rm -f "libxconfclient.la" && ln -s "../libxconfclient.la" "libxconfclient.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/xconf-client'
+Making all in protocol
+make[2]: Entering directory '/opt/t2-patched-src/source/protocol'
+Making all in http
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol/http'
+/bin/bash ../../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libhttp_la-curlinterface.lo -MD -MP -MF .deps/libhttp_la-curlinterface.Tpo -c -o libhttp_la-curlinterface.lo `test -f 'curlinterface.c' || echo './'`curlinterface.c
+/bin/bash ../../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libhttp_la-multicurlinterface.lo -MD -MP -MF .deps/libhttp_la-multicurlinterface.Tpo -c -o libhttp_la-multicurlinterface.lo `test -f 'multicurlinterface.c' || echo './'`multicurlinterface.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libhttp_la-curlinterface.lo -MD -MP -MF .deps/libhttp_la-curlinterface.Tpo -c curlinterface.c  -fPIC -DPIC -o .libs/libhttp_la-curlinterface.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libhttp_la-multicurlinterface.lo -MD -MP -MF .deps/libhttp_la-multicurlinterface.Tpo -c multicurlinterface.c  -fPIC -DPIC -o .libs/libhttp_la-multicurlinterface.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libhttp_la-curlinterface.lo -MD -MP -MF .deps/libhttp_la-curlinterface.Tpo -c curlinterface.c -o libhttp_la-curlinterface.o >/dev/null 2>&1
+mv -f .deps/libhttp_la-curlinterface.Tpo .deps/libhttp_la-curlinterface.Plo
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -DLIBRDKCERTSEL_BUILD -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libhttp_la-multicurlinterface.lo -MD -MP -MF .deps/libhttp_la-multicurlinterface.Tpo -c multicurlinterface.c -o libhttp_la-multicurlinterface.o >/dev/null 2>&1
+mv -f .deps/libhttp_la-multicurlinterface.Tpo .deps/libhttp_la-multicurlinterface.Plo
+/bin/bash ../../../libtool  --tag=CC   --mode=link gcc -DLIBRDKCERTSEL_BUILD  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lcurl -lcrypto -lRdkCertSelector -lrdkconfig -L/usr/local/lib -lglib-2.0 -o libhttp.la -rpath /usr/local/lib libhttp_la-curlinterface.lo libhttp_la-multicurlinterface.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libhttp_la-curlinterface.o .libs/libhttp_la-multicurlinterface.o   -lcurl -lcrypto /usr/local/lib/libRdkCertSelector.so -lrdkconfig -L/usr/local/lib -lglib-2.0    -Wl,-soname -Wl,libhttp.so.0 -o .libs/libhttp.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libhttp.so.0" && ln -s "libhttp.so.0.0.0" "libhttp.so.0")
+libtool: link: (cd ".libs" && rm -f "libhttp.so" && ln -s "libhttp.so.0.0.0" "libhttp.so")
+libtool: link: ( cd ".libs" && rm -f "libhttp.la" && ln -s "../libhttp.la" "libhttp.la" )
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol/http'
+Making all in rbusMethod
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol/rbusMethod'
+/bin/bash ../../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/reportgen -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT librbusmethod_la-rbusmethodinterface.lo -MD -MP -MF .deps/librbusmethod_la-rbusmethodinterface.Tpo -c -o librbusmethod_la-rbusmethodinterface.lo `test -f 'rbusmethodinterface.c' || echo './'`rbusmethodinterface.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/reportgen -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT librbusmethod_la-rbusmethodinterface.lo -MD -MP -MF .deps/librbusmethod_la-rbusmethodinterface.Tpo -c rbusmethodinterface.c  -fPIC -DPIC -o .libs/librbusmethod_la-rbusmethodinterface.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../../include -I../../../source/ccspinterface -I../../../source/bulkdata -I../../../source/reportgen -I../../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT librbusmethod_la-rbusmethodinterface.lo -MD -MP -MF .deps/librbusmethod_la-rbusmethodinterface.Tpo -c rbusmethodinterface.c -o librbusmethod_la-rbusmethodinterface.o >/dev/null 2>&1
+mv -f .deps/librbusmethod_la-rbusmethodinterface.Tpo .deps/librbusmethod_la-rbusmethodinterface.Plo
+/bin/bash ../../../libtool  --tag=CC   --mode=link gcc  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lrbus -L/usr/local/lib -lglib-2.0 -o librbusmethod.la -rpath /usr/local/lib librbusmethod_la-rbusmethodinterface.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/librbusmethod_la-rbusmethodinterface.o   -lrbus -L/usr/local/lib -lglib-2.0    -Wl,-soname -Wl,librbusmethod.so.0 -o .libs/librbusmethod.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "librbusmethod.so.0" && ln -s "librbusmethod.so.0.0.0" "librbusmethod.so.0")
+libtool: link: (cd ".libs" && rm -f "librbusmethod.so" && ln -s "librbusmethod.so.0.0.0" "librbusmethod.so")
+libtool: link: ( cd ".libs" && rm -f "librbusmethod.la" && ln -s "../librbusmethod.la" "librbusmethod.la" )
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol/rbusMethod'
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol'
+make[2]: Leaving directory '/opt/t2-patched-src/source/protocol'
+Making all in reportgen
+make[2]: Entering directory '/opt/t2-patched-src/source/reportgen'
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../include -I../../source/ccspinterface -I../../source/bulkdata -I../../source/utils -I../../source/dcautil  -DENABLE_DYNAMIC_TABLE_SUPPORT  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libreportgen_la-reportgen.lo -MD -MP -MF .deps/libreportgen_la-reportgen.Tpo -c -o libreportgen_la-reportgen.lo `test -f 'reportgen.c' || echo './'`reportgen.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../include -I../../source/ccspinterface -I../../source/bulkdata -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libreportgen_la-reportgen.lo -MD -MP -MF .deps/libreportgen_la-reportgen.Tpo -c reportgen.c  -fPIC -DPIC -o .libs/libreportgen_la-reportgen.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I../../include -I../../source/ccspinterface -I../../source/bulkdata -I../../source/utils -I../../source/dcautil -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libreportgen_la-reportgen.lo -MD -MP -MF .deps/libreportgen_la-reportgen.Tpo -c reportgen.c -o libreportgen_la-reportgen.o >/dev/null 2>&1
+mv -f .deps/libreportgen_la-reportgen.Tpo .deps/libreportgen_la-reportgen.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lcjson -lcurl -L/usr/local/lib -lglib-2.0 -o libreportgen.la -rpath /usr/local/lib libreportgen_la-reportgen.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libreportgen_la-reportgen.o   -lcjson -lcurl -L/usr/local/lib -lglib-2.0    -Wl,-soname -Wl,libreportgen.so.0 -o .libs/libreportgen.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libreportgen.so.0" && ln -s "libreportgen.so.0.0.0" "libreportgen.so.0")
+libtool: link: (cd ".libs" && rm -f "libreportgen.so" && ln -s "libreportgen.so.0.0.0" "libreportgen.so")
+libtool: link: ( cd ".libs" && rm -f "libreportgen.la" && ln -s "../libreportgen.la" "libreportgen.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/reportgen'
+Making all in scheduler
+make[2]: Entering directory '/opt/t2-patched-src/source/scheduler'
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I../../include -I/usr/local/include/ccsp -I../../source/ccspinterface -I../../source/bulkdata -I../../source/reportgen -I../../source/dcautil -I../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libscheduler_la-scheduler.lo -MD -MP -MF .deps/libscheduler_la-scheduler.Tpo -c -o libscheduler_la-scheduler.lo `test -f 'scheduler.c' || echo './'`scheduler.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I../../include -I/usr/local/include/ccsp -I../../source/ccspinterface -I../../source/bulkdata -I../../source/reportgen -I../../source/dcautil -I../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libscheduler_la-scheduler.lo -MD -MP -MF .deps/libscheduler_la-scheduler.Tpo -c scheduler.c  -fPIC -DPIC -o .libs/libscheduler_la-scheduler.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I../../include -I/usr/local/include/ccsp -I../../source/ccspinterface -I../../source/bulkdata -I../../source/reportgen -I../../source/dcautil -I../../source/utils -DENABLE_DYNAMIC_TABLE_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libscheduler_la-scheduler.lo -MD -MP -MF .deps/libscheduler_la-scheduler.Tpo -c scheduler.c -o libscheduler_la-scheduler.o >/dev/null 2>&1
+mv -f .deps/libscheduler_la-scheduler.Tpo .deps/libscheduler_la-scheduler.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc  -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC  -L/usr/local/lib -lglib-2.0 -o libscheduler.la -rpath /usr/local/lib libscheduler_la-scheduler.lo ../../source/utils/libt2utils.la 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libscheduler_la-scheduler.o   -Wl,-rpath -Wl,/opt/t2-patched-src/source/utils/.libs -L/usr/local/lib -lglib-2.0 ../../source/utils/.libs/libt2utils.so    -Wl,-soname -Wl,libscheduler.so.0 -o .libs/libscheduler.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libscheduler.so.0" && ln -s "libscheduler.so.0.0.0" "libscheduler.so.0")
+libtool: link: (cd ".libs" && rm -f "libscheduler.so" && ln -s "libscheduler.so.0.0.0" "libscheduler.so")
+libtool: link: ( cd ".libs" && rm -f "libscheduler.la" && ln -s "../libscheduler.la" "libscheduler.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/scheduler'
+Making all in dcautil
+make[2]: Entering directory '/opt/t2-patched-src/source/dcautil'
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.   -DENABLE_DYNAMIC_TABLE_SUPPORT  -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dcautil.lo -MD -MP -MF .deps/libdcautil_la-dcautil.Tpo -c -o libdcautil_la-dcautil.lo `test -f 'dcautil.c' || echo './'`dcautil.c
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.   -DENABLE_DYNAMIC_TABLE_SUPPORT  -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dca.lo -MD -MP -MF .deps/libdcautil_la-dca.Tpo -c -o libdcautil_la-dca.lo `test -f 'dca.c' || echo './'`dca.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -DENABLE_DYNAMIC_TABLE_SUPPORT -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dcautil.lo -MD -MP -MF .deps/libdcautil_la-dcautil.Tpo -c dcautil.c  -fPIC -DPIC -o .libs/libdcautil_la-dcautil.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -DENABLE_DYNAMIC_TABLE_SUPPORT -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dca.lo -MD -MP -MF .deps/libdcautil_la-dca.Tpo -c dca.c  -fPIC -DPIC -o .libs/libdcautil_la-dca.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -DENABLE_DYNAMIC_TABLE_SUPPORT -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dcautil.lo -MD -MP -MF .deps/libdcautil_la-dcautil.Tpo -c dcautil.c -o libdcautil_la-dcautil.o >/dev/null 2>&1
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -DENABLE_DYNAMIC_TABLE_SUPPORT -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dca.lo -MD -MP -MF .deps/libdcautil_la-dca.Tpo -c dca.c -o libdcautil_la-dca.o >/dev/null 2>&1
+mv -f .deps/libdcautil_la-dcautil.Tpo .deps/libdcautil_la-dcautil.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.   -DENABLE_DYNAMIC_TABLE_SUPPORT  -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-legacyutils.lo -MD -MP -MF .deps/libdcautil_la-legacyutils.Tpo -c -o libdcautil_la-legacyutils.lo `test -f 'legacyutils.c' || echo './'`legacyutils.c
+mv -f .deps/libdcautil_la-dca.Tpo .deps/libdcautil_la-dca.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.   -DENABLE_DYNAMIC_TABLE_SUPPORT  -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dcaproc.lo -MD -MP -MF .deps/libdcautil_la-dcaproc.Tpo -c -o libdcautil_la-dcaproc.lo `test -f 'dcaproc.c' || echo './'`dcaproc.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -DENABLE_DYNAMIC_TABLE_SUPPORT -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-legacyutils.lo -MD -MP -MF .deps/libdcautil_la-legacyutils.Tpo -c legacyutils.c  -fPIC -DPIC -o .libs/libdcautil_la-legacyutils.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -DENABLE_DYNAMIC_TABLE_SUPPORT -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-legacyutils.lo -MD -MP -MF .deps/libdcautil_la-legacyutils.Tpo -c legacyutils.c -o libdcautil_la-legacyutils.o >/dev/null 2>&1
+mv -f .deps/libdcautil_la-legacyutils.Tpo .deps/libdcautil_la-legacyutils.Plo
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -DENABLE_DYNAMIC_TABLE_SUPPORT -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dcaproc.lo -MD -MP -MF .deps/libdcautil_la-dcaproc.Tpo -c dcaproc.c  -fPIC -DPIC -o .libs/libdcautil_la-dcaproc.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -DENABLE_DYNAMIC_TABLE_SUPPORT -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libdcautil_la-dcaproc.lo -MD -MP -MF .deps/libdcautil_la-dcaproc.Tpo -c dcaproc.c -o libdcautil_la-dcaproc.o >/dev/null 2>&1
+mv -f .deps/libdcautil_la-dcaproc.Tpo .deps/libdcautil_la-dcaproc.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc  -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lcjson  -L/usr/local/lib -lglib-2.0 -o libdcautil.la -rpath /usr/local/lib libdcautil_la-dcautil.lo libdcautil_la-dca.lo libdcautil_la-legacyutils.lo libdcautil_la-dcaproc.lo ../../source/ccspinterface/libccspinterface.la ../../source/utils/libt2utils.la 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libdcautil_la-dcautil.o .libs/libdcautil_la-dca.o .libs/libdcautil_la-legacyutils.o .libs/libdcautil_la-dcaproc.o   -Wl,-rpath -Wl,/opt/t2-patched-src/source/ccspinterface/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/utils/.libs -lcjson -L/usr/local/lib -lglib-2.0 ../../source/ccspinterface/.libs/libccspinterface.so ../../source/utils/.libs/libt2utils.so    -Wl,-soname -Wl,libdcautil.so.0 -o .libs/libdcautil.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libdcautil.so.0" && ln -s "libdcautil.so.0.0.0" "libdcautil.so.0")
+libtool: link: (cd ".libs" && rm -f "libdcautil.so" && ln -s "libdcautil.so.0.0.0" "libdcautil.so")
+libtool: link: ( cd ".libs" && rm -f "libdcautil.la" && ln -s "../libdcautil.la" "libdcautil.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/dcautil'
+Making all in commonlib
+make[2]: Entering directory '/opt/t2-patched-src/source/commonlib'
+gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../source/utils -I../../include -DENABLE_DYNAMIC_TABLE_SUPPORT -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT telemetry2_0_client-telemetry_client.o -MD -MP -MF .deps/telemetry2_0_client-telemetry_client.Tpo -c -o telemetry2_0_client-telemetry_client.o `test -f 'telemetry_client.c' || echo './'`telemetry_client.c
+gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ccsp -I/usr/local/include/rbus -I../../source/utils -I../../include -DENABLE_DYNAMIC_TABLE_SUPPORT -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT telemetry2_0_client-telemetry_busmessage_sender.o -MD -MP -MF .deps/telemetry2_0_client-telemetry_busmessage_sender.Tpo -c -o telemetry2_0_client-telemetry_busmessage_sender.o `test -f 'telemetry_busmessage_sender.c' || echo './'`telemetry_busmessage_sender.c
+mv -f .deps/telemetry2_0_client-telemetry_client.Tpo .deps/telemetry2_0_client-telemetry_client.Po
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/rbus -I../../source/utils -I../../include -DENABLE_DYNAMIC_TABLE_SUPPORT -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libtelemetry_msgsender_la-telemetry_busmessage_sender.lo -MD -MP -MF .deps/libtelemetry_msgsender_la-telemetry_busmessage_sender.Tpo -c -o libtelemetry_msgsender_la-telemetry_busmessage_sender.lo `test -f 'telemetry_busmessage_sender.c' || echo './'`telemetry_busmessage_sender.c
+mv -f .deps/telemetry2_0_client-telemetry_busmessage_sender.Tpo .deps/telemetry2_0_client-telemetry_busmessage_sender.Po
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS  -L/usr/local/lib -lglib-2.0 -o telemetry2_0_client telemetry2_0_client-telemetry_client.o telemetry2_0_client-telemetry_busmessage_sender.o -lrbus ../../source/utils/libt2utils.la -lpthread  
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/rbus -I../../source/utils -I../../include -DENABLE_DYNAMIC_TABLE_SUPPORT -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libtelemetry_msgsender_la-telemetry_busmessage_sender.lo -MD -MP -MF .deps/libtelemetry_msgsender_la-telemetry_busmessage_sender.Tpo -c telemetry_busmessage_sender.c  -fPIC -DPIC -o .libs/libtelemetry_msgsender_la-telemetry_busmessage_sender.o
+libtool: link: gcc -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -o .libs/telemetry2_0_client telemetry2_0_client-telemetry_client.o telemetry2_0_client-telemetry_busmessage_sender.o  -L/usr/local/lib -lglib-2.0 -lrbus ../../source/utils/.libs/libt2utils.so -lpthread
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/rbus -I../../source/utils -I../../include -DENABLE_DYNAMIC_TABLE_SUPPORT -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libtelemetry_msgsender_la-telemetry_busmessage_sender.lo -MD -MP -MF .deps/libtelemetry_msgsender_la-telemetry_busmessage_sender.Tpo -c telemetry_busmessage_sender.c -o libtelemetry_msgsender_la-telemetry_busmessage_sender.o >/dev/null 2>&1
+mv -f .deps/libtelemetry_msgsender_la-telemetry_busmessage_sender.Tpo .deps/libtelemetry_msgsender_la-telemetry_busmessage_sender.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -L/usr/local/lib -lglib-2.0 -o libtelemetry_msgsender.la -rpath /usr/local/lib libtelemetry_msgsender_la-telemetry_busmessage_sender.lo -lrbus ../../source/utils/libt2utils.la  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libtelemetry_msgsender_la-telemetry_busmessage_sender.o   -Wl,-rpath -Wl,/opt/t2-patched-src/source/utils/.libs -L/usr/local/lib -lglib-2.0 -lrbus ../../source/utils/.libs/libt2utils.so    -Wl,-soname -Wl,libtelemetry_msgsender.so.0 -o .libs/libtelemetry_msgsender.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libtelemetry_msgsender.so.0" && ln -s "libtelemetry_msgsender.so.0.0.0" "libtelemetry_msgsender.so.0")
+libtool: link: (cd ".libs" && rm -f "libtelemetry_msgsender.so" && ln -s "libtelemetry_msgsender.so.0.0.0" "libtelemetry_msgsender.so")
+libtool: link: ( cd ".libs" && rm -f "libtelemetry_msgsender.la" && ln -s "../libtelemetry_msgsender.la" "libtelemetry_msgsender.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/commonlib'
+Making all in bulkdata
+make[2]: Entering directory '/opt/t2-patched-src/source/bulkdata'
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client   -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-reportprofiles.lo -MD -MP -MF .deps/libbulkdata_la-reportprofiles.Tpo -c -o libbulkdata_la-reportprofiles.lo `test -f 'reportprofiles.c' || echo './'`reportprofiles.c
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client   -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-profile.lo -MD -MP -MF .deps/libbulkdata_la-profile.Tpo -c -o libbulkdata_la-profile.lo `test -f 'profile.c' || echo './'`profile.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-reportprofiles.lo -MD -MP -MF .deps/libbulkdata_la-reportprofiles.Tpo -c reportprofiles.c  -fPIC -DPIC -o .libs/libbulkdata_la-reportprofiles.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-profile.lo -MD -MP -MF .deps/libbulkdata_la-profile.Tpo -c profile.c  -fPIC -DPIC -o .libs/libbulkdata_la-profile.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-reportprofiles.lo -MD -MP -MF .deps/libbulkdata_la-reportprofiles.Tpo -c reportprofiles.c -o libbulkdata_la-reportprofiles.o >/dev/null 2>&1
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-profile.lo -MD -MP -MF .deps/libbulkdata_la-profile.Tpo -c profile.c -o libbulkdata_la-profile.o >/dev/null 2>&1
+mv -f .deps/libbulkdata_la-reportprofiles.Tpo .deps/libbulkdata_la-reportprofiles.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client   -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-profilexconf.lo -MD -MP -MF .deps/libbulkdata_la-profilexconf.Tpo -c -o libbulkdata_la-profilexconf.lo `test -f 'profilexconf.c' || echo './'`profilexconf.c
+mv -f .deps/libbulkdata_la-profile.Tpo .deps/libbulkdata_la-profile.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client   -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-t2eventreceiver.lo -MD -MP -MF .deps/libbulkdata_la-t2eventreceiver.Tpo -c -o libbulkdata_la-t2eventreceiver.lo `test -f 't2eventreceiver.c' || echo './'`t2eventreceiver.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-profilexconf.lo -MD -MP -MF .deps/libbulkdata_la-profilexconf.Tpo -c profilexconf.c  -fPIC -DPIC -o .libs/libbulkdata_la-profilexconf.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-t2eventreceiver.lo -MD -MP -MF .deps/libbulkdata_la-t2eventreceiver.Tpo -c t2eventreceiver.c  -fPIC -DPIC -o .libs/libbulkdata_la-t2eventreceiver.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-profilexconf.lo -MD -MP -MF .deps/libbulkdata_la-profilexconf.Tpo -c profilexconf.c -o libbulkdata_la-profilexconf.o >/dev/null 2>&1
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-t2eventreceiver.lo -MD -MP -MF .deps/libbulkdata_la-t2eventreceiver.Tpo -c t2eventreceiver.c -o libbulkdata_la-t2eventreceiver.o >/dev/null 2>&1
+mv -f .deps/libbulkdata_la-profilexconf.Tpo .deps/libbulkdata_la-profilexconf.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client   -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-t2markers.lo -MD -MP -MF .deps/libbulkdata_la-t2markers.Tpo -c -o libbulkdata_la-t2markers.lo `test -f 't2markers.c' || echo './'`t2markers.c
+mv -f .deps/libbulkdata_la-t2eventreceiver.Tpo .deps/libbulkdata_la-t2eventreceiver.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client   -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-datamodel.lo -MD -MP -MF .deps/libbulkdata_la-datamodel.Tpo -c -o libbulkdata_la-datamodel.lo `test -f 'datamodel.c' || echo './'`datamodel.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-t2markers.lo -MD -MP -MF .deps/libbulkdata_la-t2markers.Tpo -c t2markers.c  -fPIC -DPIC -o .libs/libbulkdata_la-t2markers.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-datamodel.lo -MD -MP -MF .deps/libbulkdata_la-datamodel.Tpo -c datamodel.c  -fPIC -DPIC -o .libs/libbulkdata_la-datamodel.o
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-t2markers.lo -MD -MP -MF .deps/libbulkdata_la-t2markers.Tpo -c t2markers.c -o libbulkdata_la-t2markers.o >/dev/null 2>&1
+libtool: compile:  gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" "-DPACKAGE_STRING=\"telemetry 2.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I. -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../source/utils -I../../source/dcautil -I../../source/reportgen -I../../source/protocol/http -I../../source/protocol/rbusMethod -I../../source/scheduler -I../../include -I../../source/ccspinterface -I../../source/t2parser -I../../source/xconf-client -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT libbulkdata_la-datamodel.lo -MD -MP -MF .deps/libbulkdata_la-datamodel.Tpo -c datamodel.c -o libbulkdata_la-datamodel.o >/dev/null 2>&1
+mv -f .deps/libbulkdata_la-t2markers.Tpo .deps/libbulkdata_la-t2markers.Plo
+mv -f .deps/libbulkdata_la-datamodel.Tpo .deps/libbulkdata_la-datamodel.Plo
+/bin/bash ../../libtool  --tag=CC   --mode=link gcc -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lcjson -lmsgpackc -lwebconfig_framework -L/usr/local/lib -lglib-2.0 -o libbulkdata.la -rpath /usr/local/lib libbulkdata_la-reportprofiles.lo libbulkdata_la-profile.lo libbulkdata_la-profilexconf.lo libbulkdata_la-t2eventreceiver.lo libbulkdata_la-t2markers.lo libbulkdata_la-datamodel.lo ../../source/utils/libt2utils.la ../../source/dcautil/libdcautil.la ../../source/protocol/http/libhttp.la ../../source/protocol/rbusMethod/librbusmethod.la ../../source/ccspinterface/libccspinterface.la ../../source/reportgen/libreportgen.la ../../source/scheduler/libscheduler.la ../../source/xconf-client/libxconfclient.la  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libbulkdata_la-reportprofiles.o .libs/libbulkdata_la-profile.o .libs/libbulkdata_la-profilexconf.o .libs/libbulkdata_la-t2eventreceiver.o .libs/libbulkdata_la-t2markers.o .libs/libbulkdata_la-datamodel.o   -Wl,-rpath -Wl,/opt/t2-patched-src/source/utils/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/dcautil/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/protocol/http/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/protocol/rbusMethod/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/ccspinterface/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/reportgen/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/scheduler/.libs -Wl,-rpath -Wl,/opt/t2-patched-src/source/xconf-client/.libs -lcjson -lmsgpackc /usr/local/lib/libwebconfig_framework.so -L/usr/local/lib -lglib-2.0 ../../source/utils/.libs/libt2utils.so ../../source/dcautil/.libs/libdcautil.so ../../source/protocol/http/.libs/libhttp.so ../../source/protocol/rbusMethod/.libs/librbusmethod.so ../../source/ccspinterface/.libs/libccspinterface.so ../../source/reportgen/.libs/libreportgen.so ../../source/scheduler/.libs/libscheduler.so ../../source/xconf-client/.libs/libxconfclient.so    -Wl,-soname -Wl,libbulkdata.so.0 -o .libs/libbulkdata.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libbulkdata.so.0" && ln -s "libbulkdata.so.0.0.0" "libbulkdata.so.0")
+libtool: link: (cd ".libs" && rm -f "libbulkdata.so" && ln -s "libbulkdata.so.0.0.0" "libbulkdata.so")
+libtool: link: ( cd ".libs" && rm -f "libbulkdata.la" && ln -s "../libbulkdata.la" "libbulkdata.la" )
+make[2]: Leaving directory '/opt/t2-patched-src/source/bulkdata'
+make[2]: Entering directory '/opt/t2-patched-src/source'
+gcc -DPACKAGE_NAME=\"telemetry\" -DPACKAGE_TARNAME=\"telemetry\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"telemetry\ 2.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"telemetry\" -DVERSION=\"2.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_MALLOC=1 -I.  -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include/ -I/usr/local/include/rbus -I../include -I../source/utils -I../source/bulkdata -I../source/ccspinterface -I../source/dcautil -I../source/protocol/http -I../source/protocol/rbusMethod -I../source/reportgen -I../source/scheduler -I../source/t2parser -I../source/utils -I../source/xconf-client   -DENABLE_DYNAMIC_TABLE_SUPPORT -DFEATURE_SUPPORT_RDKLOG -D_FILE_OFFSET_BITS=64 -D_TIME_BITS=64 -DRDK_LOGGER -DFEATURE_SUPPORT_WEBCONFIG  -DLIBRDKCERTSEL_BUILD  -DENABLE_RDKB_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -MT telemetry2_0-telemetry2_0.o -MD -MP -MF .deps/telemetry2_0-telemetry2_0.Tpo -c -o telemetry2_0-telemetry2_0.o `test -f 'telemetry2_0.c' || echo './'`telemetry2_0.c
+mv -f .deps/telemetry2_0-telemetry2_0.Tpo .deps/telemetry2_0-telemetry2_0.Po
+/bin/bash ../libtool  --tag=CC   --mode=link gcc -DFEATURE_SUPPORT_RDKLOG -D_FILE_OFFSET_BITS=64 -D_TIME_BITS=64 -DRDK_LOGGER -DFEATURE_SUPPORT_WEBCONFIG  -DLIBRDKCERTSEL_BUILD  -DENABLE_RDKB_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -lcjson -lrdkloggers -lwebconfig_framework  -lRdkCertSelector  -L/usr/local/lib -lglib-2.0 -o telemetry2_0 telemetry2_0-telemetry2_0.o  ../source/utils/libt2utils.la ../source/dcautil/libdcautil.la ../source/protocol/rbusMethod/librbusmethod.la ../source/bulkdata/libbulkdata.la ../source/ccspinterface/libccspinterface.la ../source/reportgen/libreportgen.la ../source/scheduler/libscheduler.la ../source/protocol/http/libhttp.la ../source/t2parser/libt2parser.la ../source/xconf-client/libxconfclient.la  
+libtool: link: gcc -DFEATURE_SUPPORT_RDKLOG -D_FILE_OFFSET_BITS=64 -D_TIME_BITS=64 -DRDK_LOGGER -DFEATURE_SUPPORT_WEBCONFIG -DLIBRDKCERTSEL_BUILD -DENABLE_RDKB_SUPPORT -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -o .libs/telemetry2_0 telemetry2_0-telemetry2_0.o  -lcjson /usr/local/lib/librdkloggers.so /usr/local/lib/libwebconfig_framework.so /usr/local/lib/libRdkCertSelector.so -L/usr/local/lib -lglib-2.0 ../source/utils/.libs/libt2utils.so ../source/dcautil/.libs/libdcautil.so ../source/protocol/rbusMethod/.libs/librbusmethod.so ../source/bulkdata/.libs/libbulkdata.so ../source/ccspinterface/.libs/libccspinterface.so ../source/reportgen/.libs/libreportgen.so ../source/scheduler/.libs/libscheduler.so ../source/protocol/http/.libs/libhttp.so ../source/t2parser/.libs/libt2parser.so ../source/xconf-client/.libs/libxconfclient.so
+make[2]: Leaving directory '/opt/t2-patched-src/source'
+make[1]: Leaving directory '/opt/t2-patched-src/source'
+make[1]: Entering directory '/opt/t2-patched-src'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/opt/t2-patched-src'
+Making install in source
+make[1]: Entering directory '/opt/t2-patched-src/source'
+Making install in utils
+make[2]: Entering directory '/opt/t2-patched-src/source/utils'
+make[3]: Entering directory '/opt/t2-patched-src/source/utils'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libt2utils.la '/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/libt2utils.so.0.0.0 /usr/local/lib/libt2utils.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libt2utils.so.0.0.0 libt2utils.so.0 || { rm -f libt2utils.so.0 && ln -s libt2utils.so.0.0.0 libt2utils.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libt2utils.so.0.0.0 libt2utils.so || { rm -f libt2utils.so && ln -s libt2utils.so.0.0.0 libt2utils.so; }; })
+libtool: install: /usr/bin/install -c .libs/libt2utils.lai /usr/local/lib/libt2utils.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/utils'
+make[2]: Leaving directory '/opt/t2-patched-src/source/utils'
+Making install in ccspinterface
+make[2]: Entering directory '/opt/t2-patched-src/source/ccspinterface'
+make[3]: Entering directory '/opt/t2-patched-src/source/ccspinterface'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libccspinterface.la '/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/libccspinterface.so.0.0.0 /usr/local/lib/libccspinterface.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libccspinterface.so.0.0.0 libccspinterface.so.0 || { rm -f libccspinterface.so.0 && ln -s libccspinterface.so.0.0.0 libccspinterface.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libccspinterface.so.0.0.0 libccspinterface.so || { rm -f libccspinterface.so && ln -s libccspinterface.so.0.0.0 libccspinterface.so; }; })
+libtool: install: /usr/bin/install -c .libs/libccspinterface.lai /usr/local/lib/libccspinterface.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/ccspinterface'
+make[2]: Leaving directory '/opt/t2-patched-src/source/ccspinterface'
+Making install in t2parser
+make[2]: Entering directory '/opt/t2-patched-src/source/t2parser'
+make[3]: Entering directory '/opt/t2-patched-src/source/t2parser'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libt2parser.la '/usr/local/lib'
+libtool: warning: relinking 'libt2parser.la'
+libtool: install: (cd /opt/t2-patched-src/source/t2parser; /bin/bash "/opt/t2-patched-src/libtool"  --tag CC --mode=relink gcc -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -lmsgpackc -L/usr/local/lib -lglib-2.0 -o libt2parser.la -rpath /usr/local/lib libt2parser_la-t2parser.lo libt2parser_la-t2parserxconf.lo ../../source/ccspinterface/libccspinterface.la ../../source/utils/libt2utils.la )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libt2parser_la-t2parser.o .libs/libt2parser_la-t2parserxconf.o   -lmsgpackc -L/usr/local/lib -lglib-2.0 -lccspinterface -lt2utils    -Wl,-soname -Wl,libt2parser.so.0 -o .libs/libt2parser.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libt2parser.so.0.0.0T /usr/local/lib/libt2parser.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libt2parser.so.0.0.0 libt2parser.so.0 || { rm -f libt2parser.so.0 && ln -s libt2parser.so.0.0.0 libt2parser.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libt2parser.so.0.0.0 libt2parser.so || { rm -f libt2parser.so && ln -s libt2parser.so.0.0.0 libt2parser.so; }; })
+libtool: install: /usr/bin/install -c .libs/libt2parser.lai /usr/local/lib/libt2parser.la
+libtool: install: /usr/bin/install -c .libs/libt2parser.a /usr/local/lib/libt2parser.a
+libtool: install: chmod 644 /usr/local/lib/libt2parser.a
+libtool: install: ranlib /usr/local/lib/libt2parser.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/t2parser'
+make[2]: Leaving directory '/opt/t2-patched-src/source/t2parser'
+Making install in xconf-client
+make[2]: Entering directory '/opt/t2-patched-src/source/xconf-client'
+make[3]: Entering directory '/opt/t2-patched-src/source/xconf-client'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libxconfclient.la '/usr/local/lib'
+libtool: warning: relinking 'libxconfclient.la'
+libtool: install: (cd /opt/t2-patched-src/source/xconf-client; /bin/bash "/opt/t2-patched-src/libtool"  --tag CC --mode=relink gcc -DLIBRDKCERTSEL_BUILD -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lcjson -lcurl -lRdkCertSelector -lrdkconfig -L/usr/local/lib -lglib-2.0 -o libxconfclient.la -rpath /usr/local/lib libxconfclient_la-xconfclient.lo ../../source/t2parser/libt2parser.la ../../source/ccspinterface/libccspinterface.la )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libxconfclient_la-xconfclient.o   -lcjson -lcurl -L/usr/local/lib -lRdkCertSelector -lrdkconfig -lglib-2.0 -lt2parser -lccspinterface    -Wl,-soname -Wl,libxconfclient.so.0 -o .libs/libxconfclient.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxconfclient.so.0.0.0T /usr/local/lib/libxconfclient.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libxconfclient.so.0.0.0 libxconfclient.so.0 || { rm -f libxconfclient.so.0 && ln -s libxconfclient.so.0.0.0 libxconfclient.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libxconfclient.so.0.0.0 libxconfclient.so || { rm -f libxconfclient.so && ln -s libxconfclient.so.0.0.0 libxconfclient.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxconfclient.lai /usr/local/lib/libxconfclient.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/xconf-client'
+make[2]: Leaving directory '/opt/t2-patched-src/source/xconf-client'
+Making install in protocol
+make[2]: Entering directory '/opt/t2-patched-src/source/protocol'
+Making install in http
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol/http'
+make[4]: Entering directory '/opt/t2-patched-src/source/protocol/http'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../../libtool   --mode=install /usr/bin/install -c   libhttp.la '/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/libhttp.so.0.0.0 /usr/local/lib/libhttp.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libhttp.so.0.0.0 libhttp.so.0 || { rm -f libhttp.so.0 && ln -s libhttp.so.0.0.0 libhttp.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libhttp.so.0.0.0 libhttp.so || { rm -f libhttp.so && ln -s libhttp.so.0.0.0 libhttp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libhttp.lai /usr/local/lib/libhttp.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/t2-patched-src/source/protocol/http'
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol/http'
+Making install in rbusMethod
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol/rbusMethod'
+make[4]: Entering directory '/opt/t2-patched-src/source/protocol/rbusMethod'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../../libtool   --mode=install /usr/bin/install -c   librbusmethod.la '/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/librbusmethod.so.0.0.0 /usr/local/lib/librbusmethod.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f librbusmethod.so.0.0.0 librbusmethod.so.0 || { rm -f librbusmethod.so.0 && ln -s librbusmethod.so.0.0.0 librbusmethod.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f librbusmethod.so.0.0.0 librbusmethod.so || { rm -f librbusmethod.so && ln -s librbusmethod.so.0.0.0 librbusmethod.so; }; })
+libtool: install: /usr/bin/install -c .libs/librbusmethod.lai /usr/local/lib/librbusmethod.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/t2-patched-src/source/protocol/rbusMethod'
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol/rbusMethod'
+make[3]: Entering directory '/opt/t2-patched-src/source/protocol'
+make[4]: Entering directory '/opt/t2-patched-src/source/protocol'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/opt/t2-patched-src/source/protocol'
+make[3]: Leaving directory '/opt/t2-patched-src/source/protocol'
+make[2]: Leaving directory '/opt/t2-patched-src/source/protocol'
+Making install in reportgen
+make[2]: Entering directory '/opt/t2-patched-src/source/reportgen'
+make[3]: Entering directory '/opt/t2-patched-src/source/reportgen'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libreportgen.la '/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/libreportgen.so.0.0.0 /usr/local/lib/libreportgen.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libreportgen.so.0.0.0 libreportgen.so.0 || { rm -f libreportgen.so.0 && ln -s libreportgen.so.0.0.0 libreportgen.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libreportgen.so.0.0.0 libreportgen.so || { rm -f libreportgen.so && ln -s libreportgen.so.0.0.0 libreportgen.so; }; })
+libtool: install: /usr/bin/install -c .libs/libreportgen.lai /usr/local/lib/libreportgen.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/reportgen'
+make[2]: Leaving directory '/opt/t2-patched-src/source/reportgen'
+Making install in scheduler
+make[2]: Entering directory '/opt/t2-patched-src/source/scheduler'
+make[3]: Entering directory '/opt/t2-patched-src/source/scheduler'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libscheduler.la '/usr/local/lib'
+libtool: warning: relinking 'libscheduler.la'
+libtool: install: (cd /opt/t2-patched-src/source/scheduler; /bin/bash "/opt/t2-patched-src/libtool"  --tag CC --mode=relink gcc -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -L/usr/local/lib -lglib-2.0 -o libscheduler.la -rpath /usr/local/lib libscheduler_la-scheduler.lo ../../source/utils/libt2utils.la )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libscheduler_la-scheduler.o   -L/usr/local/lib -lglib-2.0 -lt2utils    -Wl,-soname -Wl,libscheduler.so.0 -o .libs/libscheduler.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libscheduler.so.0.0.0T /usr/local/lib/libscheduler.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libscheduler.so.0.0.0 libscheduler.so.0 || { rm -f libscheduler.so.0 && ln -s libscheduler.so.0.0.0 libscheduler.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libscheduler.so.0.0.0 libscheduler.so || { rm -f libscheduler.so && ln -s libscheduler.so.0.0.0 libscheduler.so; }; })
+libtool: install: /usr/bin/install -c .libs/libscheduler.lai /usr/local/lib/libscheduler.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/scheduler'
+make[2]: Leaving directory '/opt/t2-patched-src/source/scheduler'
+Making install in dcautil
+make[2]: Entering directory '/opt/t2-patched-src/source/dcautil'
+make[3]: Entering directory '/opt/t2-patched-src/source/dcautil'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libdcautil.la '/usr/local/lib'
+libtool: warning: relinking 'libdcautil.la'
+libtool: install: (cd /opt/t2-patched-src/source/dcautil; /bin/bash "/opt/t2-patched-src/libtool"  --tag CC --mode=relink gcc -DUSE_TR181_CCSP_MESSAGEBUS -fPIC -I/usr/local/include/dbus-1.0 -I/usr/local/lib/dbus-1.0/include -I/usr/local/include -I/usr/local/include/rbus -I../../include -I../../source/ccspinterface -I../../source/utils -I../../source/bulkdata -I../../source/protocol/http -I/usr/local/include/ccsp -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lcjson -L/usr/local/lib -lglib-2.0 -o libdcautil.la -rpath /usr/local/lib libdcautil_la-dcautil.lo libdcautil_la-dca.lo libdcautil_la-legacyutils.lo libdcautil_la-dcaproc.lo ../../source/ccspinterface/libccspinterface.la ../../source/utils/libt2utils.la )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libdcautil_la-dcautil.o .libs/libdcautil_la-dca.o .libs/libdcautil_la-legacyutils.o .libs/libdcautil_la-dcaproc.o   -lcjson -L/usr/local/lib -lglib-2.0 -lccspinterface -lt2utils    -Wl,-soname -Wl,libdcautil.so.0 -o .libs/libdcautil.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libdcautil.so.0.0.0T /usr/local/lib/libdcautil.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libdcautil.so.0.0.0 libdcautil.so.0 || { rm -f libdcautil.so.0 && ln -s libdcautil.so.0.0.0 libdcautil.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libdcautil.so.0.0.0 libdcautil.so || { rm -f libdcautil.so && ln -s libdcautil.so.0.0.0 libdcautil.so; }; })
+libtool: install: /usr/bin/install -c .libs/libdcautil.lai /usr/local/lib/libdcautil.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/dcautil'
+make[2]: Leaving directory '/opt/t2-patched-src/source/dcautil'
+Making install in commonlib
+make[2]: Entering directory '/opt/t2-patched-src/source/commonlib'
+make[3]: Entering directory '/opt/t2-patched-src/source/commonlib'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libtelemetry_msgsender.la '/usr/local/lib'
+libtool: warning: relinking 'libtelemetry_msgsender.la'
+libtool: install: (cd /opt/t2-patched-src/source/commonlib; /bin/bash "/opt/t2-patched-src/libtool"  --tag CC --mode=relink gcc -DCCSP_INC_no_asm_sigcontext_h -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -L/usr/local/lib -lglib-2.0 -o libtelemetry_msgsender.la -rpath /usr/local/lib libtelemetry_msgsender_la-telemetry_busmessage_sender.lo -lrbus ../../source/utils/libt2utils.la )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libtelemetry_msgsender_la-telemetry_busmessage_sender.o   -L/usr/local/lib -lglib-2.0 -lrbus -lt2utils    -Wl,-soname -Wl,libtelemetry_msgsender.so.0 -o .libs/libtelemetry_msgsender.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libtelemetry_msgsender.so.0.0.0T /usr/local/lib/libtelemetry_msgsender.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libtelemetry_msgsender.so.0.0.0 libtelemetry_msgsender.so.0 || { rm -f libtelemetry_msgsender.so.0 && ln -s libtelemetry_msgsender.so.0.0.0 libtelemetry_msgsender.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libtelemetry_msgsender.so.0.0.0 libtelemetry_msgsender.so || { rm -f libtelemetry_msgsender.so && ln -s libtelemetry_msgsender.so.0.0.0 libtelemetry_msgsender.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtelemetry_msgsender.lai /usr/local/lib/libtelemetry_msgsender.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c telemetry2_0_client '/usr/local/bin'
+libtool: install: /usr/bin/install -c .libs/telemetry2_0_client /usr/local/bin/telemetry2_0_client
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/commonlib'
+make[2]: Leaving directory '/opt/t2-patched-src/source/commonlib'
+Making install in bulkdata
+make[2]: Entering directory '/opt/t2-patched-src/source/bulkdata'
+make[3]: Entering directory '/opt/t2-patched-src/source/bulkdata'
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libbulkdata.la '/usr/local/lib'
+libtool: warning: relinking 'libbulkdata.la'
+libtool: install: (cd /opt/t2-patched-src/source/bulkdata; /bin/bash "/opt/t2-patched-src/libtool"  --tag CC --mode=relink gcc -DFEATURE_SUPPORT_WEBCONFIG -Wall -Werror -Wextra -I/usr/local/include/rtmessage -I/usr/local/include/msgpack -I/usr/local/include/rbus -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -DFEATURE_SUPPORT_WEBCONFIG -DRDK_LOGGER -DPERSIST_LOG_MON_REF -DDCMAGENT -DENABLE_MTLS -shared -fPIC -lcjson -lmsgpackc -lwebconfig_framework -L/usr/local/lib -lglib-2.0 -o libbulkdata.la -rpath /usr/local/lib libbulkdata_la-reportprofiles.lo libbulkdata_la-profile.lo libbulkdata_la-profilexconf.lo libbulkdata_la-t2eventreceiver.lo libbulkdata_la-t2markers.lo libbulkdata_la-datamodel.lo ../../source/utils/libt2utils.la ../../source/dcautil/libdcautil.la ../../source/protocol/http/libhttp.la ../../source/protocol/rbusMethod/librbusmethod.la ../../source/ccspinterface/libccspinterface.la ../../source/reportgen/libreportgen.la ../../source/scheduler/libscheduler.la ../../source/xconf-client/libxconfclient.la )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/libbulkdata_la-reportprofiles.o .libs/libbulkdata_la-profile.o .libs/libbulkdata_la-profilexconf.o .libs/libbulkdata_la-t2eventreceiver.o .libs/libbulkdata_la-t2markers.o .libs/libbulkdata_la-datamodel.o   -lcjson -lmsgpackc -L/usr/local/lib -lwebconfig_framework -lglib-2.0 -lt2utils -ldcautil -lhttp -lrbusmethod -lccspinterface -lreportgen -lscheduler -lxconfclient    -Wl,-soname -Wl,libbulkdata.so.0 -o .libs/libbulkdata.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libbulkdata.so.0.0.0T /usr/local/lib/libbulkdata.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libbulkdata.so.0.0.0 libbulkdata.so.0 || { rm -f libbulkdata.so.0 && ln -s libbulkdata.so.0.0.0 libbulkdata.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libbulkdata.so.0.0.0 libbulkdata.so || { rm -f libbulkdata.so && ln -s libbulkdata.so.0.0.0 libbulkdata.so; }; })
+libtool: install: /usr/bin/install -c .libs/libbulkdata.lai /usr/local/lib/libbulkdata.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source/bulkdata'
+make[2]: Leaving directory '/opt/t2-patched-src/source/bulkdata'
+make[2]: Entering directory '/opt/t2-patched-src/source'
+make[3]: Entering directory '/opt/t2-patched-src/source'
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c telemetry2_0 '/usr/local/bin'
+libtool: install: /usr/bin/install -c .libs/telemetry2_0 /usr/local/bin/telemetry2_0
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/t2-patched-src/source'
+make[2]: Leaving directory '/opt/t2-patched-src/source'
+make[1]: Leaving directory '/opt/t2-patched-src/source'
+make[1]: Entering directory '/opt/t2-patched-src'
+make[2]: Entering directory '/opt/t2-patched-src'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/opt/t2-patched-src'
+make[1]: Leaving directory '/opt/t2-patched-src'
+LINKAGE /usr/local/bin/telemetry2_0
+	linux-vdso.so.1 (0x0000ffff908ed000)
+	libt2utils.so.0 => /usr/local/lib/libt2utils.so.0 (0x0000ffff90870000)
+	libbulkdata.so.0 => /usr/local/lib/libbulkdata.so.0 (0x0000ffff90840000)
+	libscheduler.so.0 => /usr/local/lib/libscheduler.so.0 (0x0000ffff90820000)
+	libhttp.so.0 => /usr/local/lib/libhttp.so.0 (0x0000ffff90800000)
+	libt2parser.so.0 => /usr/local/lib/libt2parser.so.0 (0x0000ffff907d0000)
+	libxconfclient.so.0 => /usr/local/lib/libxconfclient.so.0 (0x0000ffff907b0000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000ffff90600000)
+	/lib/ld-linux-aarch64.so.1 (0x0000ffff908b4000)
+	librdkloggers.so.0 => /usr/local/lib/librdkloggers.so.0 (0x0000ffff905e0000)
+	libcjson.so.1 => /lib/aarch64-linux-gnu/libcjson.so.1 (0x0000ffff905c0000)
+	libmsgpackc.so.2 => /lib/aarch64-linux-gnu/libmsgpackc.so.2 (0x0000ffff905a0000)
+	libwebconfig_framework.so.0 => /usr/local/lib/libwebconfig_framework.so.0 (0x0000ffff90570000)
+	libdcautil.so.0 => /usr/local/lib/libdcautil.so.0 (0x0000ffff90550000)
+	librbusmethod.so.0 => /usr/local/lib/librbusmethod.so.0 (0x0000ffff90530000)
+	libccspinterface.so.0 => /usr/local/lib/libccspinterface.so.0 (0x0000ffff90510000)
+	libreportgen.so.0 => /usr/local/lib/libreportgen.so.0 (0x0000ffff904f0000)
+	libcurl.so.4 => /lib/aarch64-linux-gnu/libcurl.so.4 (0x0000ffff90440000)
+	libcrypto.so.3 => /lib/aarch64-linux-gnu/libcrypto.so.3 (0x0000ffff90000000)
+	libRdkCertSelector.so.0 => /usr/local/lib/libRdkCertSelector.so.0 (0x0000ffff90420000)
+	liblog4c.so.3 => /lib/aarch64-linux-gnu/liblog4c.so.3 (0x0000ffff8ffd0000)
+	libsystemd.so.0 => /lib/aarch64-linux-gnu/libsystemd.so.0 (0x0000ffff8fef0000)
+	librbus.so.0 => /usr/local/lib/librbus.so.0 (0x0000ffff8fe90000)
+	libglib-2.0.so.0 => /lib/aarch64-linux-gnu/libglib-2.0.so.0 (0x0000ffff8fd40000)
+	libnghttp2.so.14 => /lib/aarch64-linux-gnu/libnghttp2.so.14 (0x0000ffff8fd00000)
+	libidn2.so.0 => /lib/aarch64-linux-gnu/libidn2.so.0 (0x0000ffff8fcd0000)
+	librtmp.so.1 => /lib/aarch64-linux-gnu/librtmp.so.1 (0x0000ffff8fca0000)
+	libssh.so.4 => /lib/aarch64-linux-gnu/libssh.so.4 (0x0000ffff8fc20000)
+	libpsl.so.5 => /lib/aarch64-linux-gnu/libpsl.so.5 (0x0000ffff8fbf0000)
+	libssl.so.3 => /lib/aarch64-linux-gnu/libssl.so.3 (0x0000ffff8fb40000)
+	libgssapi_krb5.so.2 => /lib/aarch64-linux-gnu/libgssapi_krb5.so.2 (0x0000ffff8fae0000)
+	libldap-2.5.so.0 => /lib/aarch64-linux-gnu/libldap-2.5.so.0 (0x0000ffff8fa70000)
+	liblber-2.5.so.0 => /lib/aarch64-linux-gnu/liblber-2.5.so.0 (0x0000ffff8fa40000)
+	libzstd.so.1 => /lib/aarch64-linux-gnu/libzstd.so.1 (0x0000ffff8f970000)
+	libbrotlidec.so.1 => /lib/aarch64-linux-gnu/libbrotlidec.so.1 (0x0000ffff8f950000)
+	libz.so.1 => /lib/aarch64-linux-gnu/libz.so.1 (0x0000ffff8f920000)
+	libexpat.so.1 => /lib/aarch64-linux-gnu/libexpat.so.1 (0x0000ffff8f8e0000)
+	libpthread.so.0 => /lib/aarch64-linux-gnu/libpthread.so.0 (0x0000ffff8f8c0000)
+	liblzma.so.5 => /lib/aarch64-linux-gnu/liblzma.so.5 (0x0000ffff8f880000)
+	liblz4.so.1 => /lib/aarch64-linux-gnu/liblz4.so.1 (0x0000ffff8f850000)
+	libcap.so.2 => /lib/aarch64-linux-gnu/libcap.so.2 (0x0000ffff8f830000)
+	libgcrypt.so.20 => /lib/aarch64-linux-gnu/libgcrypt.so.20 (0x0000ffff8f740000)
+	librbuscore.so.0 => /usr/local/lib/librbuscore.so.0 (0x0000ffff8f710000)
+	librtMessage.so.0 => /usr/local/lib/librtMessage.so.0 (0x0000ffff8f610000)
+	libpcre.so.3 => /lib/aarch64-linux-gnu/libpcre.so.3 (0x0000ffff8f590000)
+	libm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000ffff8f4f0000)
+	libunistring.so.2 => /lib/aarch64-linux-gnu/libunistring.so.2 (0x0000ffff8f330000)
+	libgnutls.so.30 => /lib/aarch64-linux-gnu/libgnutls.so.30 (0x0000ffff8f000000)
+	libhogweed.so.6 => /lib/aarch64-linux-gnu/libhogweed.so.6 (0x0000ffff8f2d0000)
+	libnettle.so.8 => /lib/aarch64-linux-gnu/libnettle.so.8 (0x0000ffff8f270000)
+	libgmp.so.10 => /lib/aarch64-linux-gnu/libgmp.so.10 (0x0000ffff8ef70000)
+	libkrb5.so.3 => /lib/aarch64-linux-gnu/libkrb5.so.3 (0x0000ffff8ee90000)
+	libk5crypto.so.3 => /lib/aarch64-linux-gnu/libk5crypto.so.3 (0x0000ffff8f230000)
+	libcom_err.so.2 => /lib/aarch64-linux-gnu/libcom_err.so.2 (0x0000ffff8f210000)
+	libkrb5support.so.0 => /lib/aarch64-linux-gnu/libkrb5support.so.0 (0x0000ffff8ee70000)
+	libsasl2.so.2 => /lib/aarch64-linux-gnu/libsasl2.so.2 (0x0000ffff8ee40000)
+	libbrotlicommon.so.1 => /lib/aarch64-linux-gnu/libbrotlicommon.so.1 (0x0000ffff8ee00000)
+	libgpg-error.so.0 => /lib/aarch64-linux-gnu/libgpg-error.so.0 (0x0000ffff8edc0000)
+	libp11-kit.so.0 => /lib/aarch64-linux-gnu/libp11-kit.so.0 (0x0000ffff8ec70000)
+	libtasn1.so.6 => /lib/aarch64-linux-gnu/libtasn1.so.6 (0x0000ffff8ec40000)
+	libkeyutils.so.1 => /lib/aarch64-linux-gnu/libkeyutils.so.1 (0x0000ffff8ec20000)
+	libresolv.so.2 => /lib/aarch64-linux-gnu/libresolv.so.2 (0x0000ffff8ebf0000)
+	libffi.so.8 => /lib/aarch64-linux-gnu/libffi.so.8 (0x0000ffff8ebd0000)
+LINKAGE /usr/local/lib/libreportgen.so
+	linux-vdso.so.1 (0x0000ffffb7576000)
+	libcjson.so.1 => /lib/aarch64-linux-gnu/libcjson.so.1 (0x0000ffffb74f0000)
+	libcurl.so.4 => /lib/aarch64-linux-gnu/libcurl.so.4 (0x0000ffffb7440000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000ffffb7290000)
+	/lib/ld-linux-aarch64.so.1 (0x0000ffffb753d000)
+	libnghttp2.so.14 => /lib/aarch64-linux-gnu/libnghttp2.so.14 (0x0000ffffb7250000)
+	libidn2.so.0 => /lib/aarch64-linux-gnu/libidn2.so.0 (0x0000ffffb7220000)
+	librtmp.so.1 => /lib/aarch64-linux-gnu/librtmp.so.1 (0x0000ffffb71f0000)
+	libssh.so.4 => /lib/aarch64-linux-gnu/libssh.so.4 (0x0000ffffb7170000)
+	libpsl.so.5 => /lib/aarch64-linux-gnu/libpsl.so.5 (0x0000ffffb7140000)
+	libssl.so.3 => /lib/aarch64-linux-gnu/libssl.so.3 (0x0000ffffb7090000)
+	libcrypto.so.3 => /lib/aarch64-linux-gnu/libcrypto.so.3 (0x0000ffffb6c00000)
+	libgssapi_krb5.so.2 => /lib/aarch64-linux-gnu/libgssapi_krb5.so.2 (0x0000ffffb7030000)
+	libldap-2.5.so.0 => /lib/aarch64-linux-gnu/libldap-2.5.so.0 (0x0000ffffb6b90000)
+	liblber-2.5.so.0 => /lib/aarch64-linux-gnu/liblber-2.5.so.0 (0x0000ffffb6b60000)
+	libzstd.so.1 => /lib/aarch64-linux-gnu/libzstd.so.1 (0x0000ffffb6a90000)
+	libbrotlidec.so.1 => /lib/aarch64-linux-gnu/libbrotlidec.so.1 (0x0000ffffb6a70000)
+	libz.so.1 => /lib/aarch64-linux-gnu/libz.so.1 (0x0000ffffb6a40000)
+	libunistring.so.2 => /lib/aarch64-linux-gnu/libunistring.so.2 (0x0000ffffb6880000)
+	libgnutls.so.30 => /lib/aarch64-linux-gnu/libgnutls.so.30 (0x0000ffffb6600000)
+	libhogweed.so.6 => /lib/aarch64-linux-gnu/libhogweed.so.6 (0x0000ffffb6820000)
+	libnettle.so.8 => /lib/aarch64-linux-gnu/libnettle.so.8 (0x0000ffffb65a0000)
+	libgmp.so.10 => /lib/aarch64-linux-gnu/libgmp.so.10 (0x0000ffffb6510000)
+	libkrb5.so.3 => /lib/aarch64-linux-gnu/libkrb5.so.3 (0x0000ffffb6430000)
+	libk5crypto.so.3 => /lib/aarch64-linux-gnu/libk5crypto.so.3 (0x0000ffffb63f0000)
+	libcom_err.so.2 => /lib/aarch64-linux-gnu/libcom_err.so.2 (0x0000ffffb7010000)
+	libkrb5support.so.0 => /lib/aarch64-linux-gnu/libkrb5support.so.0 (0x0000ffffb63d0000)
+	libsasl2.so.2 => /lib/aarch64-linux-gnu/libsasl2.so.2 (0x0000ffffb63a0000)
+	libbrotlicommon.so.1 => /lib/aarch64-linux-gnu/libbrotlicommon.so.1 (0x0000ffffb6360000)
+	libp11-kit.so.0 => /lib/aarch64-linux-gnu/libp11-kit.so.0 (0x0000ffffb6210000)
+	libtasn1.so.6 => /lib/aarch64-linux-gnu/libtasn1.so.6 (0x0000ffffb61e0000)
+	libkeyutils.so.1 => /lib/aarch64-linux-gnu/libkeyutils.so.1 (0x0000ffffb61c0000)
+	libresolv.so.2 => /lib/aarch64-linux-gnu/libresolv.so.2 (0x0000ffffb6190000)
+	libffi.so.8 => /lib/aarch64-linux-gnu/libffi.so.8 (0x0000ffffb6170000)
+LINKAGE /usr/local/lib/libbulkdata.so
+	linux-vdso.so.1 (0x0000ffff82c03000)
+	libcjson.so.1 => /lib/aarch64-linux-gnu/libcjson.so.1 (0x0000ffff82b70000)
+	libmsgpackc.so.2 => /lib/aarch64-linux-gnu/libmsgpackc.so.2 (0x0000ffff82b50000)
+	libwebconfig_framework.so.0 => /usr/local/lib/libwebconfig_framework.so.0 (0x0000ffff82b20000)
+	libt2utils.so.0 => /usr/local/lib/libt2utils.so.0 (0x0000ffff82b00000)
+	libdcautil.so.0 => /usr/local/lib/libdcautil.so.0 (0x0000ffff82ae0000)
+	libhttp.so.0 => /usr/local/lib/libhttp.so.0 (0x0000ffff82ac0000)
+	librbusmethod.so.0 => /usr/local/lib/librbusmethod.so.0 (0x0000ffff82aa0000)
+	libccspinterface.so.0 => /usr/local/lib/libccspinterface.so.0 (0x0000ffff82a80000)
+	libreportgen.so.0 => /usr/local/lib/libreportgen.so.0 (0x0000ffff82a60000)
+	libscheduler.so.0 => /usr/local/lib/libscheduler.so.0 (0x0000ffff82a40000)
+	libxconfclient.so.0 => /usr/local/lib/libxconfclient.so.0 (0x0000ffff82a20000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000ffff82870000)
+	/lib/ld-linux-aarch64.so.1 (0x0000ffff82bca000)
+	librbus.so.0 => /usr/local/lib/librbus.so.0 (0x0000ffff82810000)
+	librdkloggers.so.0 => /usr/local/lib/librdkloggers.so.0 (0x0000ffff827f0000)
+	libcurl.so.4 => /lib/aarch64-linux-gnu/libcurl.so.4 (0x0000ffff82740000)
+	libcrypto.so.3 => /lib/aarch64-linux-gnu/libcrypto.so.3 (0x0000ffff82200000)
+	libRdkCertSelector.so.0 => /usr/local/lib/libRdkCertSelector.so.0 (0x0000ffff82720000)
+	libglib-2.0.so.0 => /lib/aarch64-linux-gnu/libglib-2.0.so.0 (0x0000ffff820b0000)
+	libt2parser.so.0 => /usr/local/lib/libt2parser.so.0 (0x0000ffff826f0000)
+	librbuscore.so.0 => /usr/local/lib/librbuscore.so.0 (0x0000ffff826c0000)
+	librtMessage.so.0 => /usr/local/lib/librtMessage.so.0 (0x0000ffff81fb0000)
+	liblog4c.so.3 => /lib/aarch64-linux-gnu/liblog4c.so.3 (0x0000ffff82690000)
+	libsystemd.so.0 => /lib/aarch64-linux-gnu/libsystemd.so.0 (0x0000ffff81ed0000)
+	libnghttp2.so.14 => /lib/aarch64-linux-gnu/libnghttp2.so.14 (0x0000ffff82650000)
+	libidn2.so.0 => /lib/aarch64-linux-gnu/libidn2.so.0 (0x0000ffff82620000)
+	librtmp.so.1 => /lib/aarch64-linux-gnu/librtmp.so.1 (0x0000ffff81ea0000)
+	libssh.so.4 => /lib/aarch64-linux-gnu/libssh.so.4 (0x0000ffff81e20000)
+	libpsl.so.5 => /lib/aarch64-linux-gnu/libpsl.so.5 (0x0000ffff81df0000)
+	libssl.so.3 => /lib/aarch64-linux-gnu/libssl.so.3 (0x0000ffff81d40000)
+	libgssapi_krb5.so.2 => /lib/aarch64-linux-gnu/libgssapi_krb5.so.2 (0x0000ffff81ce0000)
+	libldap-2.5.so.0 => /lib/aarch64-linux-gnu/libldap-2.5.so.0 (0x0000ffff81c70000)
+	liblber-2.5.so.0 => /lib/aarch64-linux-gnu/liblber-2.5.so.0 (0x0000ffff81c40000)
+	libzstd.so.1 => /lib/aarch64-linux-gnu/libzstd.so.1 (0x0000ffff81b70000)
+	libbrotlidec.so.1 => /lib/aarch64-linux-gnu/libbrotlidec.so.1 (0x0000ffff81b50000)
+	libz.so.1 => /lib/aarch64-linux-gnu/libz.so.1 (0x0000ffff81b20000)
+	libpcre.so.3 => /lib/aarch64-linux-gnu/libpcre.so.3 (0x0000ffff81aa0000)
+	libm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000ffff81a00000)
+	libexpat.so.1 => /lib/aarch64-linux-gnu/libexpat.so.1 (0x0000ffff819c0000)
+	libpthread.so.0 => /lib/aarch64-linux-gnu/libpthread.so.0 (0x0000ffff819a0000)
+	liblzma.so.5 => /lib/aarch64-linux-gnu/liblzma.so.5 (0x0000ffff81960000)
+	liblz4.so.1 => /lib/aarch64-linux-gnu/liblz4.so.1 (0x0000ffff81930000)
+	libcap.so.2 => /lib/aarch64-linux-gnu/libcap.so.2 (0x0000ffff81910000)
+	libgcrypt.so.20 => /lib/aarch64-linux-gnu/libgcrypt.so.20 (0x0000ffff81820000)
+	libunistring.so.2 => /lib/aarch64-linux-gnu/libunistring.so.2 (0x0000ffff81660000)
+	libgnutls.so.30 => /lib/aarch64-linux-gnu/libgnutls.so.30 (0x0000ffff81400000)
+	libhogweed.so.6 => /lib/aarch64-linux-gnu/libhogweed.so.6 (0x0000ffff813a0000)
+	libnettle.so.8 => /lib/aarch64-linux-gnu/libnettle.so.8 (0x0000ffff81340000)
+	libgmp.so.10 => /lib/aarch64-linux-gnu/libgmp.so.10 (0x0000ffff812b0000)
+	libkrb5.so.3 => /lib/aarch64-linux-gnu/libkrb5.so.3 (0x0000ffff811d0000)
+	libk5crypto.so.3 => /lib/aarch64-linux-gnu/libk5crypto.so.3 (0x0000ffff81620000)
+	libcom_err.so.2 => /lib/aarch64-linux-gnu/libcom_err.so.2 (0x0000ffff811b0000)
+	libkrb5support.so.0 => /lib/aarch64-linux-gnu/libkrb5support.so.0 (0x0000ffff81190000)
+	libsasl2.so.2 => /lib/aarch64-linux-gnu/libsasl2.so.2 (0x0000ffff81160000)
+	libbrotlicommon.so.1 => /lib/aarch64-linux-gnu/libbrotlicommon.so.1 (0x0000ffff81120000)
+	libgpg-error.so.0 => /lib/aarch64-linux-gnu/libgpg-error.so.0 (0x0000ffff810e0000)
+	libp11-kit.so.0 => /lib/aarch64-linux-gnu/libp11-kit.so.0 (0x0000ffff80f90000)
+	libtasn1.so.6 => /lib/aarch64-linux-gnu/libtasn1.so.6 (0x0000ffff80f60000)
+	libkeyutils.so.1 => /lib/aarch64-linux-gnu/libkeyutils.so.1 (0x0000ffff80f40000)
+	libresolv.so.2 => /lib/aarch64-linux-gnu/libresolv.so.2 (0x0000ffff80f10000)
+	libffi.so.8 => /lib/aarch64-linux-gnu/libffi.so.8 (0x0000ffff80ef0000)
+STEP10_INSTALLED mode=normal

@@ -1,0 +1,33 @@
+=================================================================
+==16279==ERROR: AddressSanitizer: SEGV on unknown address 0x17d7d7e7d7d7d7d9 (pc 0xffff84e2d07c bp 0xffff7720e270 sp 0xffff7720e1b0 T13)
+==16279==The signal is caused by a READ memory access.
+    #0 0xffff84e2d07c in prepareHttpUrl /opt/t2-debug-src/source/reportgen/reportgen.c:1692
+    #1 0xffff84e69d68 in CollectAndReport /opt/t2-debug-src/source/bulkdata/profile.c:689
+    #2 0xffff84c403c4 in start_thread nptl/pthread_create.c:442
+    #3 0xffff84ca9fd8  (/lib/aarch64-linux-gnu/libc.so.6+0xe9fd8)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /opt/t2-debug-src/source/reportgen/reportgen.c:1692 in prepareHttpUrl
+Thread T13 created by T3 here:
+    #0 0xffff850587a0 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:216
+    #1 0xffff84e6c474 in NotifyTimeout /opt/t2-debug-src/source/bulkdata/profile.c:1039
+    #2 0xffff84e62b20 in ReportProfiles_TimeoutCb /opt/t2-debug-src/source/bulkdata/reportprofiles.c:244
+    #3 0xffff84e04ad0 in TimeoutThread /opt/t2-debug-src/source/scheduler/scheduler.c:346
+    #4 0xffff84c403c4 in start_thread nptl/pthread_create.c:442
+    #5 0xffff84ca9fd8  (/lib/aarch64-linux-gnu/libc.so.6+0xe9fd8)
+
+Thread T3 created by T0 here:
+    #0 0xffff850587a0 in __interceptor_pthread_create ../../../../src/libsanitizer/asan/asan_interceptors.cpp:216
+    #1 0xffff84e06494 in registerProfileWithScheduler /opt/t2-debug-src/source/scheduler/scheduler.c:685
+    #2 0xffff84e6e324 in enableProfile /opt/t2-debug-src/source/bulkdata/profile.c:1305
+    #3 0xffff84e70780 in loadReportProfilesFromDisk /opt/t2-debug-src/source/bulkdata/profile.c:1717
+    #4 0xffff84e70cd8 in initProfileList /opt/t2-debug-src/source/bulkdata/profile.c:1783
+    #5 0xffff84e6369c in initReportProfiles /opt/t2-debug-src/source/bulkdata/reportprofiles.c:567
+    #6 0xaaaaaf6a24d4 in initTelemetry /opt/t2-debug-src/source/telemetry2_0.c:87
+    #7 0xaaaaaf6a2bf0 in t2DaemonMainModeInit /opt/t2-debug-src/source/telemetry2_0.c:236
+    #8 0xaaaaaf6a2f34 in main /opt/t2-debug-src/source/telemetry2_0.c:383
+    #9 0xffff84be73fc in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0xffff84be74d4 in __libc_start_main_impl ../csu/libc-start.c:392
+    #11 0xaaaaaf6a232c in _start (/usr/local/bin/telemetry2_0+0x232c)
+
+==16279==ABORTING

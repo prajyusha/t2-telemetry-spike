@@ -1,0 +1,71 @@
+T2 investigation, 2026-10-15, cached native image phase.
+Native image: sha256:431fe19104d17b9ce96ac555bf014864cb5581cc22c30b5854f544b31eecb431
+These are selected outputs, not a complete terminal transcript.
+No claim that this installed binary matches the separately cloned telemetry HEAD.
+
+Profile JSON setter:
+setvalues succeeded..
+
+Compiled event sender:
+gcc -Wall -Wextra -Werror -I/usr/local/include /mnt/L2_CONTAINER_SHARED_VOLUME/utils/t2-spike-event.c -L/usr/local/lib -Wl,-rpath,/usr/local/lib -ltelemetry_msgsender -o /tmp/t2-spike-event
+Compilation succeeded.
+t2_event_s returned 0
+Caution: some sender attempts returned 0 while caching events or finding no configured event list.
+
+Runtime generated report lines (not collector receipts):
+20261015 09:27:00.905 INFO     LOG.RDK.T2- cJSON Report = {"Report":[{"SPIKE_DM":"true"},{"SPIKE_GREP":"1"}]}
+20261015 09:28:08.899 INFO     LOG.RDK.T2- cJSON Report = {"Report":[{"SPIKE_DM":"true"},{"SPIKE_EVENT":"spike-event-ok"}]}
+20261015 09:33:11.890 INFO     LOG.RDK.T2- cJSON Report = {"Report":[{"SPIKE_DM":"true"},{"SPIKE_GREP":"1"},{"SPIKE_EVENT":"spike-event-ok"}]}
+20261015 09:33:11.891 INFO     LOG.RDK.T2- POST url = https://mockxconf:50051/dataLakeMockReportProfile
+20261015 09:33:11.891 INFO     LOG.RDK.T2- mTLS defaulted for telemetry
+
+GDB command:
+docker exec native-platform gdb -q -batch -ex 'set follow-fork-mode child' -ex 'break t2DaemonMainModeInit' -ex run -ex 'set follow-fork-mode parent' -ex continue -ex 'thread apply all bt 10' --args /usr/local/bin/telemetry2_0
+Selected output:
+Thread 2.14 "telemetry2_0" received signal SIGSEGV, Segmentation fault.
+0x000fff7c157c8 in prepareHttpUrl () from /usr/local/lib/libreportgen.so.0
+#0  0x000fff7c157c8 in prepareHttpUrl () from /usr/local/lib/libreportgen.so.0
+#1  0x000fff7f69ba0 in CollectAndReport () from /usr/local/lib/libbulkdata.so.0
+#2  0x000fff7da03c8 in start_thread (arg=0x80e680) at ./nptl/pthread_create.c:442
+#3  0x000fff7e09fdc in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone.S:79
+This identifies a failure location for this reproduction, not a proven root cause for every exit.
+
+MsgPack comparison (Python msgpack 1.2.2 already installed):
+MsgPack decoded bytes 740
+setvalues succeeded..
+rbuscli process exit 0
+20261015 09:32:40.685 DEBUG   LOG.RDK.T2- processMsgPackConfiguration --in
+20261015 09:32:40.685 DEBUG   LOG.RDK.T2- hash_str: t2-spike-msgpack-v1
+20261015 09:32:42.689 INFO   LOG.RDK.T2- Successfully enabled profile : T2Spike
+20261015 09:32:42.689 DEBUG   LOG.RDK.T2- profiles.msgpack is saved on disk
+20261015 09:32:42.747 DEBUG   LOG.RDK.T2- Received eventInfo : SPIKE_EVENT value : spike-event-ok
+Input was base64.b64encode(msgpack.packb(profile_envelope)), sent as RBUS string.
+
+XConf URL setter:
+09:27:50.690325  RBUS       ERROR rbus.c:4046 -- Thread-2942: _setInternal for Device.DeviceInfo.X_RDKCENTRAL-COM_RFC.Feature.Telemetry.ConfigURL failed with error: Entry not found error
+setvalues failed with return value: 5
+
+Authenticated endpoint probes used --cert /opt/certs/client.pem --key /opt/certs/client.pem without -k.
+GET https://mockxconf:50051/dataLakeMock:
+Not Found
+HTTP 404
+GET https://mockxconf:50050/loguploader/getT2DCMSettings:
+HTTP 200
+Body contained urn:settings:TelemetryProfile and legacy telemetryProfile array.
+POST https://mockxconf:50051/dataLakeMockReportProfile, body {"probe":"collector-only-not-T2"}:
+Message received at Data Lake Mock Server
+HTTP 200
+The successful POST was curl-only, not T2 delivery.
+
+Outage command stopped mockxconf, waited 35 seconds, inspected cache/PID, restarted it, and waited 6 seconds.
+A redundant startup attempt returned "Failed to acquire lock file"; the existing MsgPack-configured daemon initially remained active.
+At 09:33:11.890 it generated the three-marker report above during the outage, then exited.
+T2 PID during outage:
+Cache state:
+ls: cannot access '/opt/.t2cachedmessages': No such file or directory
+After restart:
+native-platform Up 9 minutes
+mockxconf Up 6 seconds
+T2 PID after collector recovery:
+ls: cannot access '/opt/.t2cachedmessages': No such file or directory
+No demonstrated cached replay or general retry timing; daemon failure prevents that conclusion.

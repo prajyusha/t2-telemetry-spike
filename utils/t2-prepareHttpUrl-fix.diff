@@ -1,0 +1,11 @@
+--- a/source/t2parser/t2parser.c
++++ b/source/t2parser/t2parser.c
+@@ -1858,7 +1858,7 @@
+ 
+     if((strcmp(jprofileProtocol->valuestring, "HTTP") == 0))
+     {
+-        profile->t2HTTPDest = (T2HTTP *) malloc(sizeof(T2HTTP));
++        profile->t2HTTPDest = (T2HTTP *) calloc(1, sizeof(T2HTTP));
+     }
+     else if ((strcmp(jprofileProtocol->valuestring, "RBUS_METHOD") == 0))
+     {

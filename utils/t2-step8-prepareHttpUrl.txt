@@ -1,0 +1,115 @@
+telemetry/source/reportgen/reportgen.c:1676-1789
+char *prepareHttpUrl(T2HTTP *http)
+{
+    if(http == NULL)
+    {
+        T2Error("Http parameters are NULL\n");
+        return NULL;
+    }
+    CURL *curl = curl_easy_init();
+    if(curl == NULL)
+    {
+        T2Error("Curl init failed Response is NULL\n");
+        return NULL;
+    }
+    char *httpUrl = strdup(http->URL);
+    T2Debug("%s: Default URL: %s \n", __FUNCTION__, httpUrl);
+
+    if (http->RequestURIparamList && http->RequestURIparamList->count)
+    {
+        unsigned int index = 0;
+        int params_len = 0;
+        char *url_params = NULL;
+        char *temp_params = NULL;
+        char *temp_url = NULL;
+
+        for(; index < http->RequestURIparamList->count; index++)
+        {
+            HTTPReqParam * httpParam = (HTTPReqParam *)(Vector_At)(http->RequestURIparamList, index);
+            char *httpParamVal = NULL;
+            char *paramValue = NULL;
+
+            if (httpParam->HttpValue)		//Static parameter
+            {
+                httpParamVal = curl_easy_escape(curl, httpParam->HttpValue, 0);
+            }
+            else				//Dynamic parameter
+            {
+                if(T2ERROR_SUCCESS != getParameterValue(httpParam->HttpRef, &paramValue))
+                {
+                    T2Error("Failed to retrieve param : %s\n", httpParam->HttpRef);
+                    continue;
+                }
+                else
+                {
+                    if (paramValue[0] == '\0')
+                    {
+                        free(paramValue);
+                        T2Error("Param value is empty for : %s\n", httpParam->HttpRef);
+                        continue;
+                    }
+
+                    httpParamVal = curl_easy_escape(curl, paramValue, 0);
+                    free(paramValue);
+                    paramValue = NULL;
+                }
+            }
+
+            int new_params_len = params_len /* current params length */
+                                 + strlen(httpParam->HttpName) /* Length of parameter 'Name' */ + strlen("=")
+                                 + strlen("&") /* Add '&' for next paramter */ + 1;
+            if(httpParamVal)
+            {
+                new_params_len += strlen(httpParamVal);
+            }
+            temp_params = realloc(url_params, new_params_len);
+            if(temp_params == NULL)
+            {
+                T2Error("Unable to allocate %d bytes of memory at Line %d on %s \n", new_params_len, __LINE__, __FILE__);
+                curl_free(httpParamVal);
+                // Free url_params to avoid memory leak before continuing
+                if(url_params)
+                {
+                    free(url_params);
+                    url_params = NULL;
+                    params_len = 0;  // Reset params_len to match freed state
+                }
+                continue;
+            }
+            url_params = temp_params;
+            params_len += snprintf(url_params + params_len, new_params_len - params_len, "%s=%s&", httpParam->HttpName, httpParamVal);
+
+            curl_free(httpParamVal);
+        }
+
+        if (params_len > 0 && url_params != NULL)
+        {
+            url_params[params_len - 1] = '\0';
+
+            int url_len = strlen(httpUrl);
+            int modified_url_len = url_len + strlen("?") + strlen(url_params) + 1;
+
+            temp_url = realloc(httpUrl, modified_url_len);
+            if(temp_url == NULL)
+            {
+                T2Error("Unable to allocate %d bytes of memory for URL at Line %d on %s \n", modified_url_len, __LINE__, __FILE__);
+                free(httpUrl);
+                free(url_params);
+                curl_easy_cleanup(curl);
+                return NULL;
+            }
+            httpUrl = temp_url;
+            snprintf(httpUrl + url_len, modified_url_len - url_len, "?%s", url_params);
+
+        }
+        if(url_params)
+        {
+            free(url_params);
+        }
+    }
+
+    curl_easy_cleanup(curl);
+    T2Debug("%s: Modified URL: %s \n", __FUNCTION__, httpUrl);
+
+    return httpUrl;
+}

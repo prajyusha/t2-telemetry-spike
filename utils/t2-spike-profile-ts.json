@@ -1,0 +1,51 @@
+{
+  "profiles": [
+    {
+      "name": "T2Spike",
+      "hash": "t2-spike-step12-ts-v1",
+      "value": {
+        "Name": "T2Spike",
+        "Description": "Docker three-marker spike",
+        "Version": "1",
+        "Protocol": "HTTP",
+        "EncodingType": "JSON",
+        "ReportingInterval": 30,
+        "TimeReference": "0001-01-01T00:00:00Z",
+        "RootName": "Report",
+        "Parameter": [
+          {
+            "type": "grep",
+            "marker": "SPIKE_GREP",
+            "search": "SPIKE_MATCH",
+            "logFile": "/mnt/L2_CONTAINER_SHARED_VOLUME/utils/t2-spike.log",
+            "use": "count",
+            "reportEmpty": true
+          },
+          {
+            "type": "event",
+            "name": "SPIKE_EVENT",
+            "eventName": "SPIKE_EVENT",
+            "component": "t2_spike",
+            "use": "absolute",
+            "reportEmpty": true
+          },
+          {
+            "type": "dataModel",
+            "name": "SPIKE_DM",
+            "reference": "Device.X_RDK_WebConfig.webcfgSubdocForceReset",
+            "reportEmpty": true
+          }
+        ],
+        "HTTP": {
+          "URL": "https://mockxconf:50051/dataLakeMockReportProfile",
+          "Compression": "None",
+          "Method": "POST"
+        },
+        "JSONEncoding": {
+          "ReportFormat": "NameValuePair",
+          "ReportTimestamp": "Unix-Epoch"
+        }
+      }
+    }
+  ]
+}
